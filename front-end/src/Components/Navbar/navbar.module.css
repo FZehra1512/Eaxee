@@ -11,19 +11,18 @@
     align-items: center;
     padding: 15px 0;
     border-bottom: 1px solid black;
+    z-index: 1000;
   }
   
 .logoContainer{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
 }
 
 .logo {
   height: 60px;
   width: 60px;
-  background-color: #2764b0;
 }
 
 .logoName {

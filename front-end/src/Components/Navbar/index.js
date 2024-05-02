@@ -1,12 +1,13 @@
 import React from 'react'
 import {Link} from "react-router-dom";
 import styles from './navbar.module.css';
+import logoImage from '../../Assets/eaxee x blue.png';
 
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logoContainer}>
-        <img src="/logo.svg" alt="Logo" className={styles.logo} />
+        <img src={logoImage} alt="Logo" className={styles.logo} />
         <a href="/" className={styles.logoName}>
           eaxee
         </a>
