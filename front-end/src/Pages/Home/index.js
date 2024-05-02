@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from "./home.module.css"
 import Navbar from '../../Components/Navbar'
+import TeamMembers from '../../Components/TeamMembers';
 
 const Home = () => {
   return (
@@ -167,15 +168,7 @@ const Home = () => {
 
       {/* Meet the team */}
       
-      <h1 className={styles.teamHeading}>Meet the team</h1>
-      <div className={styles.theTeam}>
-        <div className={styles.teamMember}></div>
-        <div className={styles.teamMember}></div>
-        <div className={styles.teamMember}></div>
-        <div className={styles.teamMember}></div>
-        <div className={styles.teamMember}></div>
-        <div className={styles.teamMember}></div>
-      </div>
+      <TeamMembers />
     </>
   );
 }

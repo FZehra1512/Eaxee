@@ -1,0 +1,60 @@
+.teamHeading {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    color: #2F4682;
+}
+
+.teamMembersWrapper {
+    padding: 30px 50px;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+  
+.teamMember {
+    display: inline-block;
+    margin-right: 60px;
+    height: 450px;
+    width: 300px;
+    background-color: rgb(222, 220, 220);
+}
+
+.teamMember:last-child {
+    margin-right: 0;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.scrollButton {
+    margin: auto;
+    height: 60px;
+    width: 60px;
+    background: rgb(222, 220, 220);;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+.scrollButton:last-child {
+    margin-left: 30px;
+}
+  
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+}
+  
+.dot.active {
+    background-color: #555;
+}
+  
