@@ -2,6 +2,8 @@ import React from 'react'
 import styles from "./home.module.css"
 import Navbar from '../../Components/Navbar'
 import TeamMembers from '../../Components/TeamMembers';
+import MainTools from '../../Components/MainTools';
+
 
 const Home = () => {
   return (
@@ -86,85 +88,7 @@ const Home = () => {
       </div>
 
       {/* Eaxee Tools Description */}
-      <div className={styles.mainTools}>
-        <h1 className={styles.mainToolsHeading}>All the tools you need</h1>
-
-        <div className={styles.toolDetails}>
-          <img src="/logo.svg" alt="image" />
-          <div className={styles.toolDescription}>
-            <h1>Data Driven</h1>
-            <p>
-              <span>Configurable Dashboards for Data Visualization</span>
-            </p>
-            <p>
-              Empower stakeholders across your organization with configurable
-              dashboards for data visualization.
-            </p>
-            <p>
-              Create personalized dashboards that display critical insights and
-              metrics, empowering teams to make data-driven decisions and drive
-              organizational success
-            </p>
-          </div>
-        </div>
-
-        <div className={styles.toolDetails}>
-          <div className={styles.toolDescription}>
-            <h1>Data Driven</h1>
-            <p>
-              <span>Configurable Dashboards for Data Visualization</span>
-            </p>
-            <p>
-              Empower stakeholders across your organization with configurable
-              dashboards for data visualization.
-            </p>
-            <p>
-              Create personalized dashboards that display critical insights and
-              metrics, empowering teams to make data-driven decisions and drive
-              organizational success
-            </p>
-          </div>
-          <img src="/logo.svg" alt="image" />
-        </div>
-
-        <div className={styles.toolDetails}>
-          <img src="/logo.svg" alt="image" />
-          <div className={styles.toolDescription}>
-            <h1>Data Driven</h1>
-            <p>
-              <span>Configurable Dashboards for Data Visualization</span>
-            </p>
-            <p>
-              Empower stakeholders across your organization with configurable
-              dashboards for data visualization.
-            </p>
-            <p>
-              Create personalized dashboards that display critical insights and
-              metrics, empowering teams to make data-driven decisions and drive
-              organizational success
-            </p>
-          </div>
-        </div>
-
-        <div className={styles.toolDetails}>
-          <div className={styles.toolDescription}>
-            <h1>Data Driven</h1>
-            <p>
-              <span>Configurable Dashboards for Data Visualization</span>
-            </p>
-            <p>
-              Empower stakeholders across your organization with configurable
-              dashboards for data visualization.
-            </p>
-            <p>
-              Create personalized dashboards that display critical insights and
-              metrics, empowering teams to make data-driven decisions and drive
-              organizational success
-            </p>
-          </div>
-          <img src="/logo.svg" alt="image" />
-        </div>
-      </div>
+      <MainTools />
 
       {/* Meet the team */}
       

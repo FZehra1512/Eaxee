@@ -1,0 +1,94 @@
+/* Eaxee Tools Description */
+
+.mainTools {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 18%;
+}
+
+
+.mainToolsHeading {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: center;
+    color: #222F4B;
+    margin-bottom: 20px;
+}
+
+.toolDetails {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 50px 0;
+}
+
+.toolDetails:last-child {
+    margin-bottom: 0px;
+}
+
+.toolDescription {
+    width: 400px;
+}
+
+.toolDescription h1 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.toolDescription p {
+    color: #1D254F;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 20px 0;
+    line-height: 24px;
+}
+
+.toolDescription span {
+    font-weight: 600;
+}
+
+.toolDetails img {
+    box-shadow: 10px 10px 12px 4px rgba(0, 0, 0, 0.28);
+    -webkit-box-shadow: 10px 10px 12px 4px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 10px 10px 12px 4px rgba(0, 0, 0, 0.28);
+}
+
+#tool1Img {
+    height: 50%;
+    width: 50%;
+}
+
+.tool2Images {
+    position: relative;
+    width: 500px;
+    height: 380px;
+}
+
+#tool2Img1 {
+    height: 220px;
+    width: 380px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#tool2Img2 {
+    height: 225px;
+    width: 390px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#tool3Img {
+    width: 555px;
+    height: 325px;
+}
+
+#tool4Img {
+    width: 516px;
+    height: 300px;
+}
+
