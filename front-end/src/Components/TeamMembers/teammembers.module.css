@@ -1,3 +1,10 @@
+.team {
+    width: 100%;
+    min-height: 75vh;
+    background-color: #EBF2FF;
+    padding: 75px 0px;
+}
+
 .teamHeading {
     font-size: 48px;
     font-weight: 700;
@@ -16,7 +23,7 @@
     margin-right: 60px;
     height: 450px;
     width: 300px;
-    background-color: rgb(222, 220, 220);
+    background-color: rgb(66, 64, 147);
 }
 
 .teamMember:last-child {

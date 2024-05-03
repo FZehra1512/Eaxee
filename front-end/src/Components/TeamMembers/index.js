@@ -74,7 +74,7 @@ const TeamMembers = () => {
 
 
   return (
-    <>
+    <div className={styles.team}>
         <h1 className={styles.teamHeading}>Meet the team</h1>
         <div className={styles.teamMembersWrapper} id='scroller'>
             <div className={styles.teamMember}></div>
@@ -92,9 +92,8 @@ const TeamMembers = () => {
             <button className={styles.scrollButton} id={styles.rightScroll} onClick={scrollRight}>
                 &gt;
             </button>
-        </div>
-        
-    </>
+        </div>     
+    </div>
   );
 };
 
