@@ -100,31 +100,45 @@
 }
 
 
+/* Resources Section */
 
-
-/* Meet the team */
-
-.teamHeading {
+.resourcesSection {
+    display: flex;
+    flex-direction: column;
+    padding: 75px 0px;
+}
+.resourcesHeading {
     font-size: 48px;
     font-weight: 700;
     text-align: center;
     color: #2F4682;
 }
 
-.teamMembersWrapper {
-    /* width: 100%; */
-    /* display: flex;
+.resources {
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 30px; */
-    padding: 30px 50px;
-    overflow-x: auto;
-    white-space: nowrap;
+    margin: 80px 0 20px;
 }
 
-.teamMember {
-    display: inline-block;
-    margin-right: 2;
-    height: 450px;
+.resourceCard {
     width: 300px;
-    background-color: rgb(222, 220, 220);
+    text-align: center;
+}
+
+.resourceCard h1 {
+    padding: 20px 0;
+    background-color: #2764b0;
+    color: #fff;
+}
+
+.resourceCardImg {
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+}
+
+.resourceCard:hover {
+    opacity: 0.9;
 }

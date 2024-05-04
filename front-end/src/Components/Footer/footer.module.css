@@ -1,0 +1,25 @@
+.footer {
+    display: flex;
+    height: 100px;
+    padding: 0 80px;
+    background-color: #2F4682;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 40px;
+}
+
+.socialLinks a {
+    text-decoration: none;
+    font-size: 32px;
+    color: #fff;
+}
