@@ -97,39 +97,39 @@ const Home = () => {
             <div
               className={styles.resourceCardImg}
               style={{ backgroundImage: `url(${blogImg})` }}
-            />
-            <h1>Blog</h1>
+            >
+              <h1>Blog</h1>
+            </div>
           </a>
           <a href="/" className={styles.resourceCard}>
             <div
               className={styles.resourceCardImg}
               style={{ backgroundImage: `url(${blogImg})` }}
-            />
-            <h1>White Paper</h1>
+            >
+              <h1>White Paper</h1>
+            </div>
           </a>
           <a href="/" className={styles.resourceCard}>
             <div
               className={styles.resourceCardImg}
               style={{ backgroundImage: `url(${blogImg})` }}
-            />
-            <h1>Documentation</h1>
+            >
+              <h1>Documentation</h1>
+            </div>
           </a>
           <a href="/" className={styles.resourceCard}>
             <div
               className={styles.resourceCardImg}
               style={{ backgroundImage: `url(${blogImg})` }}
-            />
-            <h1>Events</h1>
+            >
+              <h1>Events</h1>
+            </div>
           </a>
         </div>
       </div>
 
-
-
       {/* Footer */}
       <Footer />
-
-
     </>
   );
 }
