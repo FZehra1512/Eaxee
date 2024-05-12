@@ -7,21 +7,24 @@ import { RiYoutubeFill } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
-      <p>Trademark</p>
-      <div className={styles.socialLinks}>
-        <a href="/">
-          <MdEmail />
-        </a>
-        <a href="/">
-          <RiLinkedinBoxFill />
-        </a>
-        <a href="/">
-          <RiYoutubeFill />
-        </a>
-        <a href="/">
-          <RiFacebookBoxFill />
-        </a>
+    // TODO:Add actual social links
+    <footer className={styles.footerContainer}>
+      <div className={styles.footer}>
+        <p>Trademark</p>
+        <div className={styles.socialLinks}>
+          <a href="/">
+            <MdEmail />
+          </a>
+          <a href="/">
+            <RiLinkedinBoxFill />
+          </a>
+          <a href="/">
+            <RiYoutubeFill />
+          </a>
+          <a href="/">
+            <RiFacebookBoxFill />
+          </a>
+        </div>
       </div>
     </footer>
   );

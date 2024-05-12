@@ -60,7 +60,7 @@ const Home = () => {
             Visualize, Analyze, Optimize<span>.</span>
           </p>
         </div>
-        <button className={styles.button}>Request a Demo</button>
+        <button className='button'>Request a Demo</button>
       </div>
 
       {/* Animation */}

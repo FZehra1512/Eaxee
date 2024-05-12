@@ -15,3 +15,20 @@ a {
   text-decoration: none;
 }
 
+.button {
+  box-sizing: border-box;
+  background-color: #2764b0;
+  border: none;
+  color: #fff;
+  padding: 16px 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 19px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 8px #2764b0;
+}
+

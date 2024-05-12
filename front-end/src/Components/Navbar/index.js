@@ -90,7 +90,7 @@ const Navbar = () => {
         )}
 
         {/* Button */}
-        <button className="button">Request a Demo</button>
+        <button className="button" id="navButton">Request a Demo</button>
 
         {/* Menu button for mobile
         <button className={menuButton} onClick={toggleMenu}>

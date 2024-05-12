@@ -1,10 +1,15 @@
+.footerContainer {
+    min-width: 100vw;
+    height: 100px;
+    background-color: #2764b0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .footer {
     display: flex;
-    height: 100px;
-    padding: 0 80px;
-    background-color: #2764b0;
+    width: 80%;
     justify-content: space-between;
-    align-items: center;
 }
 
 .footer p {
@@ -19,7 +24,18 @@
 }
 
 .socialLinks a {
-    text-decoration: none;
     font-size: 32px;
     color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .footerContainer {
+        height: 120px;
+    }
+    .footer {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
 }

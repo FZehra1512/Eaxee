@@ -1,0 +1,193 @@
+/* Contact Form */
+
+.contactContainer {
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 75px;
+    margin: auto;
+    text-align: center;
+}
+
+.contactPageHeadings {
+    color: #2F4682;
+    line-height: 60px;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 25%;
+    gap: 30px;
+}
+
+.formRow {
+    display: flex;
+    column-gap: 4rem;
+}
+
+.inputField {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 0.5rem;
+    width: 100%;
+}
+
+.inputField label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1D254F;
+}
+
+.inputField input, textarea{
+    outline: none;
+    border: 1px solid #2f4680;
+    padding: 15px 10px;
+    width: 100%;
+    font-size: 16px;
+    color: #2F4682;
+    box-sizing: border-box;
+}
+
+.inputField input:focus,
+textarea:focus {
+    box-shadow: 0px 0px 5px 1px #2f4680;
+    -webkit-box-shadow: 0px 0px 5px 1px #2f4680;
+    -moz-box-shadow: 0px 0px 5px 1px #2f4680;
+}
+.errorMessage {
+    font-size: 14px;
+    color: #2F4682;
+}
+
+#submitButton {
+    width: 150px;   
+}
+
+.textarea {
+    height: 150px;
+}
+
+
+/* Office Location */
+
+.locationSection {
+    width: 100%;
+    background-color: #EBF2FF;
+    margin-bottom: 120px;
+}
+
+.container {
+    width: 70%;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.locationCard {
+    display: flex;
+    gap: 0;
+    margin-top: 30px;
+    height: 300px;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.28);
+    -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.28);
+}
+
+.mapCard {
+    background-color: rgb(198, 196, 196);
+    height: 100%;
+    width: 50%;
+}
+
+.officeInfoCard {
+    background-color: #fff;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 32px;
+}
+
+.officeInfoCard h2 {
+    font-size: 36px;
+    color: #1D254F;
+}
+
+.officeInfo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 36px;
+    gap: 26px;
+}
+
+.infoRow {
+    display: flex;
+    gap: 15px;
+    color: #2f4680;
+    font-size: 18px;
+    align-items: center;
+}
+
+.infoIcon {
+    font-size: 32px;
+}
+
+@media screen and (max-width: 1200px) {
+    .contactForm {
+        margin: 50px 15%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contactContainer {
+        padding-bottom: 30px;
+    }
+
+    .contactPageHeadings {
+        font-size: 38px;
+    }
+    .contactForm {
+        margin: 30px;
+    }
+
+    .formRow {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .locationSection {
+        margin-bottom: 50px;
+    }
+    .officeInfoCard h2 {
+        font-size: 24px;
+    }
+
+    .infoRow {
+        font-size: 14px;
+    }
+
+    .infoIcon {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+    .locationCard {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .mapCard {
+        height: 300px;
+        width: 100%;
+    }
+
+    .officeInfoCard {
+        width: 100%;
+    }
+}
+
