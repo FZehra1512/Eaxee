@@ -5,6 +5,7 @@ import TeamMembers from '../../Components/TeamMembers';
 import MainTools from '../../Components/MainTools';
 import blogImg from '../../Assets/blog.jpg'
 import Footer from '../../Components/Footer';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
@@ -60,7 +61,11 @@ const Home = () => {
             Visualize, Analyze, Optimize<span>.</span>
           </p>
         </div>
-        <button className='button'>Request a Demo</button>
+        <button className="button" id={styles.homeButton}>
+          <Link to="/requestDemo" style={{ color: "#fff" }}>
+            Request a Demo
+          </Link>
+        </button>
       </div>
 
       {/* Animation */}

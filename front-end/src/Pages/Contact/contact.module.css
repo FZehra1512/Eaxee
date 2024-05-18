@@ -24,7 +24,7 @@
 
 .formRow {
     display: flex;
-    column-gap: 4rem;
+    column-gap: 2.5rem;
 }
 
 .inputField {
@@ -41,7 +41,8 @@
     color: #1D254F;
 }
 
-.inputField input, textarea{
+.inputField input,
+textarea {
     outline: none;
     border: 1px solid #2f4680;
     padding: 15px 10px;
@@ -51,19 +52,26 @@
     box-sizing: border-box;
 }
 
+.inputField input,
+textarea:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    -webkit-text-fill-color: #2F4682 !important;
+}
+
 .inputField input:focus,
 textarea:focus {
     box-shadow: 0px 0px 5px 1px #2f4680;
     -webkit-box-shadow: 0px 0px 5px 1px #2f4680;
     -moz-box-shadow: 0px 0px 5px 1px #2f4680;
 }
+
 .errorMessage {
     font-size: 14px;
     color: #2F4682;
 }
 
 #submitButton {
-    width: 150px;   
+    width: 150px;
 }
 
 .textarea {
@@ -147,8 +155,10 @@ textarea:focus {
     .contactPageHeadings {
         font-size: 38px;
     }
+
     .contactForm {
-        margin: 30px;
+        margin: 8%;
+        gap: 20px;
     }
 
     .formRow {
@@ -156,9 +166,15 @@ textarea:focus {
         gap: 30px;
     }
 
+    .inputField input,
+    textarea {
+        padding: 10px;
+    }
+
     .locationSection {
         margin-bottom: 50px;
     }
+
     .officeInfoCard h2 {
         font-size: 24px;
     }
@@ -176,6 +192,7 @@ textarea:focus {
     .container {
         width: 90%;
     }
+
     .locationCard {
         flex-direction: column;
         height: auto;
@@ -190,4 +207,3 @@ textarea:focus {
         width: 100%;
     }
 }
-

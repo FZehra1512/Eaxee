@@ -90,7 +90,10 @@ const Navbar = () => {
         )}
 
         {/* Button */}
-        <button className="button" id="navButton">Request a Demo</button>
+        
+          <button className="button" id="navButton">
+            <NavLink to="/requestDemo" style={{color: '#fff'}}>Request a Demo</NavLink>
+          </button>
 
         {/* Menu button for mobile
         <button className={menuButton} onClick={toggleMenu}>

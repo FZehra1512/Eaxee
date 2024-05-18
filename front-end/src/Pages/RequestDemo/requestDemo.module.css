@@ -1,0 +1,140 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.logoContainer {
+    width: 100vw;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.logo {
+    display: flex;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 115px;
+}
+
+.logoImage {
+    height: 65px;
+    width: 65px;
+}
+
+.logoText {
+    color: #000;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0.08em;
+    text-align: left;
+}
+
+.mainContainer {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.coloredContainer {
+    background-color: #EBF2FF;
+    width: 100vw;
+    margin-bottom: 30px;
+}
+
+.infoCard {
+    margin: 0 15%;
+    padding: 50px 0;
+}
+
+.infoCard h1 {
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: 700;
+    color: #1D254F;
+}
+
+.infoCard p {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 32px;
+    color: #2F4682;
+}
+
+.demoFormContainer {
+    text-align: center;
+}
+
+.demoPageHeadings {
+    color: #2F4682;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.dropdownInput {
+    outline: none;
+    border: 1px solid #2f4680;
+    padding: 15px 10px;
+    width: 100%;
+    font-size: 16px;
+    color: #2F4682;
+    box-sizing: border-box;
+}
+
+#submitButton {
+    width: 180px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.footerContainer {
+    margin-top: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .logoContainer {
+        height: 70px;
+    }
+
+    .logo {
+        margin-left: 8%;
+    }
+
+    .logoImage {
+        height: 40px;
+        width: 40px;
+    }
+
+    .logoText {
+        font-size: 18px;
+    }
+
+    .infoCard {
+        margin: 0 8%;
+        padding: 30px 0;
+    }
+
+    .infoCard h1 {
+        font-size: 26px;
+        line-height: 38px;
+    }
+
+    .infoCard p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .demoPageHeadings {
+        font-size: 26px;
+    }
+
+    .dropdownInput {
+        padding: 10px;
+    }
+}
