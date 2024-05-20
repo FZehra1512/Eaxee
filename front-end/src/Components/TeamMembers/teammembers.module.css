@@ -1,8 +1,8 @@
 .team {
     width: 100%;
-    min-height: 75vh;
     background-color: #EBF2FF;
     padding: 75px 0px;
+    box-sizing: border-box;
 }
 
 .teamHeading {
@@ -90,6 +90,59 @@
     opacity: 0.8;
 }
 
+
+@media screen and (max-width: 767px) {
+    .team {
+        padding: 8% 6%;
+    }
+
+    .teamHeading {
+        font-size: 34px;
+    }
+    
+    .container {
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+    }
+
+    .card {
+        margin: 50px 0 20px;
+    }
+    .card, .profile {
+        width: 230px;
+        height: 350px;
+    }
+
+    .card:first-child {
+        margin-left: 0;
+    }
+
+    .card:last-child {
+        margin-right: 0;
+    }
+
+    .memberDetails {
+        height: 22%;
+    }
+
+    .memberDetails h1 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .memberDetails p {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .socialLink {
+        font-size: 26px;
+    }
+}
+
+
+/* TODO: Remove Unnecessary Code */
 /* .teamMembersWrapper {
     padding: 30px 50px;
     overflow-x: hidden;

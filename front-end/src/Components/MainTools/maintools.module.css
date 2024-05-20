@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     padding: 5% 18%;
+    box-sizing: border-box
 }
 
 
@@ -13,22 +14,18 @@
     line-height: 19px;
     text-align: center;
     color: #222F4B;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .toolDetails {
     display: flex;
     justify-content: space-between;
-    gap: 50px;
-    margin: 50px 0;
-}
-
-.toolDetails:last-child {
-    margin-bottom: 0px;
+    gap: 5%;
+    margin-top: 80px;
 }
 
 .toolDescription {
-    width: 400px;
+    width: 45%;
 }
 
 .toolDescription h1 {
@@ -90,5 +87,11 @@
 #tool4Img {
     width: 516px;
     height: 300px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+    .mainTools {
+        padding: 5% 10%;
+    }
 }
 
