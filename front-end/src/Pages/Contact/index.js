@@ -8,6 +8,11 @@ import emailjs from "emailjs-com";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail, MdLocalPhone } from "react-icons/md";
 
+
+// TODO: Email Reciever ki id deni hai
+// TODO: Location map ki integration krni hai ya sirf location card rakhna hai, Sir Ghazanfar said comment it down currently, will discuss it later
+// TODO: Location info update, add correct location
+
 const Contact = () => {
   const {
     register,
@@ -61,7 +66,7 @@ const Contact = () => {
         process.env.REACT_APP_USER_ID
       );
 
-      // TODO:Receiver Email ID set krni hai
+      // TODO:Receiver Email ID set krni hai, email js ki website pr ja kr template bhi set krni hai
 
       toggleAlert("Form submission was successful!", "success");
     } catch (e) {

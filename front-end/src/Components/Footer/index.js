@@ -7,7 +7,9 @@ import { RiYoutubeFill } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    // TODO:Add actual social links
+    // TODO:Add actual trademark and social links on icons
+    // TODO: Should Change Mobile View, currently its not looking good
+    // TODO: Confirm footer colour from Sir Ghazanfar
     <footer className={styles.footerContainer}>
       <div className={styles.footer}>
         <p>Trademark</p>

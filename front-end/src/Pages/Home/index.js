@@ -9,7 +9,8 @@ import MainTools from '../../Components/MainTools';
 import ResourceSection from "../../Components/ResourceSection";
 import Footer from '../../Components/Footer';
 
-
+// TODO: If a home subbar is added in navbar component, then add the home secion links in the subbar, so that when clicked the screen is scrolled down to the respective section
+// TODO: Currently <MainTools /> component is not responsive, rest of all are responsive, check by commentting the <MainTools />
 
 const Home = () => {
 
@@ -32,7 +33,7 @@ const Home = () => {
             </Link>
           </button>
 
-          {/* Animation */}
+          {/* Animation TODO: Add real animation when available, remove the png image */}
           <img
             src={animation}
             alt="Animation"

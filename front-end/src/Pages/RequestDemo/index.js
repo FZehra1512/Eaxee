@@ -7,6 +7,11 @@ import Alert from "../../Components/Alert";
 import styles from "../Contact/contact.module.css";
 import Footer from "../../Components/Footer";
 
+
+// TODO: where to submit this form? Should i use email js?
+// TODO: Remove country and current challenges fields and update UI accordingly IMPORTANT
+// TODO: Update the Job titles, ask Sir Ghazanfar for titles
+
 const RequestDemo = () => {
   const {
     register,

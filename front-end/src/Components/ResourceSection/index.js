@@ -2,6 +2,12 @@ import React from 'react';
 import styles from './resourceSection.module.css'
 import blogImg from "../../Assets/blog.jpg";
 
+
+// TODO: 1. Change hover of the divs with classnames resourceCard
+// TODO: 2. Change pictures of resource cards, currently same image use hui hai
+// TODO: 3. Update resource card links to their respective resources page sections, when resource page is ready
+
+
 const ResourceSection = () => {
   return (
     <div className={styles.resourcesSection}>

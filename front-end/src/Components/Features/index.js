@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './features.module.css'
-
+// TODO: Add correct information in featureData array
 const Features = () => {
 
     const featuresData = [

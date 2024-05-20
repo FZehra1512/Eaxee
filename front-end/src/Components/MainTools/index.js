@@ -10,6 +10,12 @@ import React from 'react'
 import styles from './maintools.module.css'
 
 const MainTools = () => {
+  //TODO: Responsiveness of this component
+  // TODO: Should i add an intro of what is eaxee? why choose eaxee?
+  // TODO: Add correct tools description
+  // TODO: Add animation effects on tool images and description, maybe they should slide into the screen from left and right
+  // TODO: Confirm from Ubaid Tools ki headings black hi hain design mai ya color change krna bhool gaye?
+  // TODO: Tool 5 ki dosri image, user management wali? Gaib hai. Get the image from ubaid and change it
   return (
     <div className={styles.mainTools}>
       <h1 className={styles.mainToolsHeading}>All the tools you need</h1>

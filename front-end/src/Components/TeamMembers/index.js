@@ -4,6 +4,11 @@ import profile from "../../Assets/Profile.jpg";
 import { RiLinkedinBoxFill } from "react-icons/ri";
 import { RiFacebookBoxFill } from "react-icons/ri";
 
+
+// TODO: 1. team array mai add correct description , social links and profile pictures
+// TODO: 2. Have to add Scroll buttons for left and right scroll
+
+
 const TeamMembers = () => {
   const team = [
     {

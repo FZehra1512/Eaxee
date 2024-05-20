@@ -6,6 +6,13 @@ import { IoMenu, IoClose } from "react-icons/io5";
 import { useMediaQuery } from "react-responsive";
 
 
+
+// TODO: Navbar ka size, plus font-size mobile pr change krna hai, make it a little bit small
+// TODO: Mobile navigation Sidebar ki stylings krni hain
+// TODO: Should i add request demo button in Mobile nav sidebar? Confirm from Sir Ghazanfar
+// TODO: Ubaid ne dropdown ka kaha hai, confirm from sir Ghazanfar, should i remove about link from navbar links, and add subbar or dropdown to the home nav link for about, meet team and resource section 
+// TODO: Change Link hover effects, need better effects.
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const isMobile = useMediaQuery({ maxWidth: "768px" });
@@ -63,6 +70,8 @@ const Navbar = () => {
     <header className="header">
       <nav className="navbar">
         <div className="logoContainer">
+          {/* TODO: Eaxee k logo pr bhi link dena hai ya sirf eaxee text pr,
+          currently sirf text aik link hai */}
           <img src={logoImage} alt="Logo" className="logo" />
           <NavLink to="/" className="logoName">
             eaxee
@@ -90,10 +99,12 @@ const Navbar = () => {
         )}
 
         {/* Button */}
-        
-          <button className="button" id="navButton">
-            <NavLink to="/requestDemo" style={{color: '#fff'}}>Request a Demo</NavLink>
-          </button>
+
+        <button className="button" id="navButton">
+          <NavLink to="/requestDemo" style={{ color: "#fff" }}>
+            Request a Demo
+          </NavLink>
+        </button>
 
         {/* Menu button for mobile
         <button className={menuButton} onClick={toggleMenu}>
@@ -105,52 +116,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-
-
-        // {
-        //   /* Menu slider for mobile */
-        // }
-        // {
-        //   /* {showMenu && (
-        //   <div className={menuSlider}>
-        //     <Link to="/" className={navLink}>
-        //       Home
-        //     </Link>
-        //     <Link to="/aboutUs" className={navLink}>
-        //       About Us
-        //     </Link>
-        //     <Link to="/contact" className={navLink}>
-        //       Contact
-        //     </Link>
-        //     <Link to="/resources" className={navLink}>
-        //       Resources
-        //     </Link>
-        //   </div>
-        // )} */
-        // }
-
-
-        // {
-        //   /* nav links */
-        // }
-        // <div
-        //   className={`nav__menu ${showMenu ? "show-menu" : ""}`}
-        //   id="nav-menu"
-        // >
-        //   {/* <Link to="/" className={navLink}>
-        //     Home
-        //   </Link>
-        //   <Link to="/aboutUs" className={navLink}>
-        //     About Us
-        //   </Link>
-        //   <Link to="/contact" className={navLink}>
-        //     Contact
-        //   </Link>
-        //   <Link to="/resources" className={navLink}>
-        //     Resources
-        //   </Link> */}
-
-        //   <div className="nav__close" id="nav-close" onClick={toggleMenu}>
-        //     <IoClose />
-        //   </div>
-        // </div>;
