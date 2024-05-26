@@ -8,8 +8,6 @@ import emailjs from "emailjs-com";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail, MdLocalPhone } from "react-icons/md";
 
-
-// TODO: Email Reciever ki id deni hai
 // TODO: Location map ki integration krni hai ya sirf location card rakhna hai, Sir Ghazanfar said comment it down currently, will discuss it later
 // TODO: Location info update, add correct location
 
@@ -116,7 +114,7 @@ const Contact = () => {
                 })}
               />
               {errors.fullName && (
-                <span className="errorMessage">{errors.fullName.message}</span>
+                <span className={styles.errorMessage}>{errors.fullName.message}</span>
               )}
             </div>
             <div className={styles.inputField}>
@@ -132,7 +130,7 @@ const Contact = () => {
                 })}
               />
               {errors.email && (
-                <span className="errorMessage">
+                <span className={styles.errorMessage}>
                   Please enter a valid email address
                 </span>
               )}
@@ -155,7 +153,7 @@ const Contact = () => {
               })}
             />
             {errors.subject && (
-              <span className="errorMessage">{errors.subject.message}</span>
+              <span className={styles.errorMessage}>{errors.subject.message}</span>
             )}
           </div>
 
@@ -172,7 +170,7 @@ const Contact = () => {
               })}
             />
             {errors.message && (
-              <span className="errorMessage">Please enter a message</span>
+              <span className={styles.errorMessage}>Please enter a message</span>
             )}
           </div>
 
@@ -209,7 +207,7 @@ const Contact = () => {
 
       {/* Location Card */}
       {/* Location TODO: Map or a picture */}
-      <div className={styles.locationSection}>
+      {/* <div className={styles.locationSection}>
         <div className={styles.container}>
           <h1 className={styles.contactPageHeadings}>Location</h1>
           <div className={styles.locationCard}>
@@ -233,7 +231,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Footer */}
       <Footer />

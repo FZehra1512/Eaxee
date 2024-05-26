@@ -9,23 +9,26 @@ const Footer = () => {
   return (
     // TODO:Add actual trademark and social links on icons
     // TODO: Should Change Mobile View, currently its not looking good
-    // TODO: Confirm footer colour from Sir Ghazanfar
     <footer className={styles.footerContainer}>
       <div className={styles.footer}>
         <p>Trademark</p>
         <div className={styles.socialLinks}>
-          <a href="/">
+          <a href="/" target="_blank" rel="noopener noreferrer">
             <MdEmail />
           </a>
-          <a href="/">
+          <a href="/" target="_blank" rel="noopener noreferrer">
             <RiLinkedinBoxFill />
           </a>
-          <a href="/">
+          <a
+            href="https://www.youtube.com/channel/UCQShgWhZmn1BiKC0wr5pS3Q"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <RiYoutubeFill />
           </a>
-          <a href="/">
+          {/* <a href="/" target="_blank" rel="noopener noreferrer">
             <RiFacebookBoxFill />
-          </a>
+          </a> */}
         </div>
       </div>
     </footer>

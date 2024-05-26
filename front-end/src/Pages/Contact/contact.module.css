@@ -66,8 +66,9 @@ textarea:focus {
 }
 
 .errorMessage {
-    font-size: 14px;
+    font-size: 16px;
     color: #2F4682;
+    text-align: left;
 }
 
 #submitButton {
