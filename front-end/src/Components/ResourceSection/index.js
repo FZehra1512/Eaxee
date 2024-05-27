@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './resourceSection.module.css'
 import blogImg from "../../Assets/blog.jpg";
+import { Link } from "react-router-dom";
 
 
 // TODO: 1. Change hover of the divs with classnames resourceCard
@@ -9,19 +10,20 @@ import blogImg from "../../Assets/blog.jpg";
 
 
 const ResourceSection = () => {
+
   return (
     <div className={styles.resourcesSection}>
       <h1 className={styles.resourcesHeading}>Resources</h1>
       <div className={styles.resources}>
         <div className={styles.rows}>
-          <a href="/" className={styles.resourceCard}>
+          <Link to="/blog" className={styles.resourceCard}>
             <div
               className={styles.resourceCardImg}
               style={{ backgroundImage: `url(${blogImg})` }}
             >
               <h1>Blog</h1>
             </div>
-          </a>
+          </Link>
           <a href="/" className={styles.resourceCard}>
             <div
               className={styles.resourceCardImg}

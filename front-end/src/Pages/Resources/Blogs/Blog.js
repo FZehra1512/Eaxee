@@ -1,17 +1,20 @@
-import React from 'react'
-// import Navbar from '../../../C omponents/Navbar'
+import React, { useEffect } from 'react'
 import '../Blogs/blogs.css'
+
 const Blog = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div className='Blog-page'>
 
-      {/* <Navbar></Navbar> */}
 
       <div className='hero-section'>
         <div>
-        {/* <hr></hr> */}
-        <div className='hero-text'><h1>Resource - Blog</h1></div>
-        <hr></hr>
+          {/* <hr></hr> */}
+          <div className='hero-text'><h1>Resource - Blog</h1></div>
+          <hr></hr>
         </div>
         <div className='search-bar'>
           <div className='search-bar-text'><h2>Explore Our Blog – Insights and Ideas Await!</h2></div>
