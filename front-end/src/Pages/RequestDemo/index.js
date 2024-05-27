@@ -1,16 +1,13 @@
-import React, { useState, forwardRef } from "react";
+import React, { useState } from "react";
 import logoImage from "../../Assets/eaxee x blue.png";
 import { NavLink } from "react-router-dom";
 import demostyles from "./requestDemo.module.css";
 import { useForm } from "react-hook-form";
+import emailjs from "emailjs-com";
 import Alert from "../../Components/Alert";
 import styles from "../Contact/contact.module.css";
 import Footer from "../../Components/Footer";
 
-
-// TODO: where to submit this form? Should i use email js?
-// TODO: Remove country and current challenges fields and update UI accordingly IMPORTANT
-// TODO: Update the Job titles, ask Sir Ghazanfar for titles
 
 const RequestDemo = () => {
   const {
@@ -36,28 +33,6 @@ const RequestDemo = () => {
     }, 5000);
   };
 
-  const Dropdown = forwardRef(({ options, ...rest }, ref) => {
-    return (
-      <select {...rest} ref={ref} className={demostyles.dropdownInput}>
-        {options.map((option) => (
-          <option key={option.value} value={option.value}>
-            {option.label}
-          </option>
-        ))}
-      </select>
-    );
-  });
-
-  const jobTitles = [
-    { label: "", value: "" },
-    { label: "Software Engineer", value: "software_engineer" },
-    { label: "Data Scientist", value: "data_scientist" },
-    { label: "Product Manager", value: "product_manager" },
-    { label: "UI/UX Designer", value: "ui_ux_designer" },
-    { label: "DevOps Engineer", value: "devops_engineer" },
-    { label: "Business Analyst", value: "business_analyst" },
-    { label: "Quality Assurance Engineer", value: "qa_engineer" },
-  ];
 
   // Function called on submit that uses emailjs to send email of valid contact form
   const onSubmit = async (data) => {
@@ -68,8 +43,8 @@ const RequestDemo = () => {
       return;
     }
 
-    // Destrcture data object
-    const { fullName, email, subject, message } = data;
+    // Destructure data object
+    const { fullName, email, phone, jobTitle, company } = data;
     try {
       // Disable form while processing submission
       setDisabled(true);
@@ -77,16 +52,17 @@ const RequestDemo = () => {
       const templateParams = {
         fullName,
         email,
-        subject,
-        message,
+        phone,
+        jobTitle,
+        company,
       };
 
-      // await emailjs.send(
-      //   process.env.REACT_APP_SERVICE_ID,
-      //   process.env.REACT_APP_TEMPLATE_ID,
-      //   templateParams,
-      //   process.env.REACT_APP_USER_ID
-      // );
+      await emailjs.send(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        templateParams,
+        process.env.REACT_APP_USER_ID
+      );
 
       // TODO:Receiver Email ID set krni hai
 
@@ -161,7 +137,7 @@ const RequestDemo = () => {
                   })}
                 />
                 {errors.fullName && (
-                  <span className="errorMessage">
+                  <span className={styles.errorMessage}>
                     {errors.fullName.message}
                   </span>
                 )}
@@ -179,7 +155,7 @@ const RequestDemo = () => {
                   })}
                 />
                 {errors.email && (
-                  <span className="errorMessage">
+                  <span className={styles.errorMessage}>
                     Please enter a valid email address
                   </span>
                 )}
@@ -190,59 +166,6 @@ const RequestDemo = () => {
 
             <div className={styles.formRow}>
               <div className={styles.inputField}>
-                <label htmlFor="company">Company Name</label>
-                <input
-                  type="text"
-                  name="company"
-                  id="company"
-                  {...register("company", {
-                    required: true,
-                  })}
-                />
-                {errors.company && (
-                  <span className="errorMessage">
-                    Please enter your company name
-                  </span>
-                )}
-              </div>
-              <div className={styles.inputField}>
-                <label htmlFor="jobTitle">Job Title/Role</label>
-                <Dropdown
-                  name="jobTitle"
-                  id="jobTitle"
-                  options={jobTitles}
-                  {...register("jobTitle", {
-                    required: true,
-                  })}
-                />
-                {errors.jobTitle && (
-                  <span className="errorMessage">
-                    Please enter a valid job title
-                  </span>
-                )}
-              </div>
-            </div>
-
-            {/* Form Row 3 */}
-
-            <div className={styles.formRow}>
-              <div className={styles.inputField}>
-                <label htmlFor="country">Country</label>
-                <Dropdown
-                  name="country"
-                  id="country"
-                  options={jobTitles}
-                  {...register("country", {
-                    required: true,
-                  })}
-                />
-                {errors.country && (
-                  <span className="errorMessage">
-                    Please enter your country
-                  </span>
-                )}
-              </div>
-              <div className={styles.inputField}>
                 <label htmlFor="phone">Phone</label>
                 <input
                   type="tel"
@@ -250,36 +173,48 @@ const RequestDemo = () => {
                   id="phone"
                   {...register("phone", {
                     required: true,
-                    pattern:
-                      /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+                    pattern: /^\+?[1-9]\d{1,14}$/,
                   })}
                 />
-                {errors.email && (
-                  <span className="errorMessage">
-                    Please enter a valid phone number
+                {errors.phone && (
+                  <span className={styles.errorMessage}>
+                    Please enter a valid phone number, along with your country code and no white-spaces
+                  </span>
+                )}
+              </div>
+              <div className={styles.inputField}>
+                <label htmlFor="jobTitle">Job Title/Role</label>
+                <input
+                  type="text"
+                  name="jobTitle"
+                  id="jobTitle"
+                  {...register("jobTitle", {
+                    required: true,
+                  })}
+                />
+                {errors.jobTitle && (
+                  <span className={styles.errorMessage}>
+                    Please enter your job title
                   </span>
                 )}
               </div>
             </div>
 
-            {/* Form Row 4 */}
+            {/* Form Row 3 */}
             <div className={styles.inputField}>
-              <label htmlFor="challenges">Current Challenges</label>
+              <label htmlFor="company">Company Name</label>
               <input
                 type="text"
-                name="challenges"
-                id="challenges"
-                {...register("challenges", {
-                  required: { value: false },
-                  maxLength: {
-                    value: 100,
-                    message:
-                      "Please state your challenges precisely within 100 characters",
-                  },
+                name="company"
+                id="company"
+                {...register("company", {
+                  required: true,
                 })}
               />
-              {errors.subject && (
-                <span className="errorMessage">{errors.subject.message}</span>
+              {errors.company && (
+                <span className={styles.errorMessage}>
+                  Please enter your company name
+                </span>
               )}
             </div>
 
@@ -299,7 +234,7 @@ const RequestDemo = () => {
               type="submit"
               className="button"
               id={demostyles.submitButton}
-              disabled={disabled}
+              // disabled={disabled}
             >
               Request Demo
             </button>

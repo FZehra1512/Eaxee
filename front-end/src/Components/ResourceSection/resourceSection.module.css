@@ -58,7 +58,7 @@
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1380px) {
+@media screen and (min-width: 769px) and (max-width: 1380px) {
     .resources {
         flex-direction: column;
         row-gap: 75px;
@@ -74,7 +74,7 @@
 }
 
 /* Tablet View */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 769px) and (max-width: 1023px) {
     .resourcesSection {
         padding: 8% 6%;
     }
@@ -91,7 +91,7 @@
 
 
 /* Mobile View */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .resourcesSection {
         padding: 8% 6%;
     }
@@ -114,6 +114,9 @@
 
     .resourceCard {
         width: 80%;
+        box-shadow: 5px 5px 6px 2px rgba(0, 0, 0, 0.28);
+        -webkit-box-shadow: 5px 5px 6px 2px rgba(0, 0, 0, 0.28);
+        -moz-box-shadow: 5px 5px 6px 2px rgba(0, 0, 0, 0.28);
     }
 
     .resourceCardImg {

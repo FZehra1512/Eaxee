@@ -11,11 +11,14 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: relative;
+  box-sizing: border-box;
   height: var(--header-height);
-  /* margin: 1rem; */
   padding: 15px 0;
+<<<<<<< HEAD
   /* border-bottom: 1px solid #000; */
+=======
+  border-bottom: 1px solid #222F4B;
+>>>>>>> d47477a4ce51a8500b6336a3690fec622ab4f805
   position: relative;
 }
   
@@ -31,69 +34,127 @@
 }
 
 .logoName {
-  color: #000;
+  color: #222F4B;
   font-size: 24px;
   font-weight: 700;
   line-height: 19px;
   letter-spacing: 0.08em;
   text-align: left;
-  /* text-decoration: none; */
   cursor: pointer;
 }
 
 .nav__toggle,
 .nav__close {
-  font-size: 1.5rem;
-  color: #000;
+  font-size: 1.6rem;
+  color: #222F4B;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav__list__web {
-  display: flex;
-  justify-content: space-between;
   width: 30%;
   min-width: 350px;
+}
+
+.nav__list__web ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__list__web button {
+  display: none;
 }
 
 .nav__list {
   display: flex;
   flex-direction: column;
-  row-gap: 3rem;
+  row-gap: 4rem;
+}
+
+.mobileNavLinks {
+  padding: 10% 5%;
+  border-bottom: 1px solid #222F4B;
+}
+
+#mobileNavButton {
+  margin: auto;
 }
 
 .nav__link {
-  color: #000;
+  color: #222F4B;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 19px;
   text-align: left;
-  /* text-decoration: none; */
   transition: color 0.4s;
 }
 
 .nav__link:hover {
   color: #2764b0;
 }
-/* TODO: Button and nav links hover effects */
 
+
+/* li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+span {
+  padding: 30px;
+  background: #2d2f31;
+  color: white;
+  font-size: 1.2em;
+  font-variant: small-caps;
+  cursor: pointer;
+  display: block;
+}
+
+span::after {
+  float: right;
+  right: 10%;
+  content: "+";
+}
+
+.slide {
+  clear: both;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  text-align: center;
+  transition: height .4s ease;
+}
+
+.slide li {
+  padding: 30px;
+}
+
+#touch {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+
+#touch:checked+.slide {
+  height: 300px;
+} */
 
 .nav__close {
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  top: 1.7rem;
+  right: 8%;
 }
 
 .nav__menu {
   position: fixed;
+  box-sizing: border-box;
   top: 0;
   right: 0;
   background-color: #EBF2FF;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
-  padding: 3rem 0;
+  padding: 22% 10%;
   transition: transform 0.4s ease, right 0.4s ease;
   transform: translateX(100%);
 }
@@ -106,14 +167,24 @@
 
   .navbar {
     justify-content: space-between;
+    padding: 5px 0;
+    height: 70px;
   }
 
   .logoContainer{
-    margin-left: 40px;
+    margin-left: 8%;
   }
 
+  .logo {
+    height: 50px;
+    width: 50px;
+  }
+
+  .logoName {
+    font-size: 20px;
+  }
   .nav__toggle {
-    margin-right: 40px;
+    margin-right: 8%;
   }
 
   #navButton {
