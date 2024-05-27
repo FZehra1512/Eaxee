@@ -1,6 +1,9 @@
 import React from 'react';
 import styles from './resourceSection.module.css'
 import blogImg from "../../Assets/blog.jpg";
+import Event from "../../Assets/images/Event.jpeg";
+import Documentation from "../../Assets/images/Documentation.webp";
+import Whitepaper from "../../Assets/images/Whitepaper.jpg";
 import { Link } from "react-router-dom";
 
 
@@ -12,6 +15,7 @@ import { Link } from "react-router-dom";
 // TODO: 3. Update resource card links to their respective resources page sections, when resource page is ready
 // - Blog Card is linked to its respective page. (Blog Page ready) -> Responsive ✔
 // - Event Card is linked to its respective page. (Event Page ready) -> Responsive ✔
+// - Whitepaper Card is linked to its respective page. (Whitepaper Page ready) -> Responsive ✔
 
 const ResourceSection = () => {
 
@@ -31,7 +35,7 @@ const ResourceSection = () => {
           <Link to="/whitepaper" className={styles.resourceCard}>
             <div
               className={styles.resourceCardImg}
-              style={{ backgroundImage: `url(${blogImg})` }}
+              style={{ backgroundImage: `url(${Whitepaper})` }}
             >
               <h1>White Paper</h1>
             </div>
@@ -41,7 +45,7 @@ const ResourceSection = () => {
           <a href="/" className={styles.resourceCard}>
             <div
               className={styles.resourceCardImg}
-              style={{ backgroundImage: `url(${blogImg})` }}
+              style={{ backgroundImage: `url(${Documentation})` }}
             >
               <h1>Documentation</h1>
             </div>
@@ -49,7 +53,7 @@ const ResourceSection = () => {
           <Link to="/events" className={styles.resourceCard}>
             <div
               className={styles.resourceCardImg}
-              style={{ backgroundImage: `url(${blogImg})` }}
+              style={{ backgroundImage: `url(${Event})` }}
             >
               <h1>Events</h1>
             </div>
