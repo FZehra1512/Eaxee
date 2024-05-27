@@ -54,7 +54,7 @@ const Event = () => {
                     </div>
                 </div>
 
-                <div className='past-event'></div>
+                {/* <div className='past-event'></div> */}
             </div>
         </div>
     )
