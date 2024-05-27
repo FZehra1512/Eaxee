@@ -14,11 +14,7 @@
   box-sizing: border-box;
   height: var(--header-height);
   padding: 15px 0;
-<<<<<<< HEAD
-  /* border-bottom: 1px solid #000; */
-=======
   border-bottom: 1px solid #222F4B;
->>>>>>> d47477a4ce51a8500b6336a3690fec622ab4f805
   position: relative;
 }
   

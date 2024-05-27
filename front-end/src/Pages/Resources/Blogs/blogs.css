@@ -34,19 +34,19 @@ hr{
 
 .search-bar{
     /* border: 1px solid green; */
-    height: 10rem;
     color: #222F4B;
     padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
+
 .search-bar-input input{
     border-radius: 50px 0px 0px 50px;
     outline: none;
     padding: 15px;
     background-color: rgb(236, 234, 234);
-    width: 50%;
+    width: 70%;
     border: none;
 }
 .search-btn{
@@ -226,4 +226,68 @@ hr{
 .blog-container-card:hover .card-text h2,
 .blog-container-card:hover .card-text p {
     color: #555;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1020px) {
+    .blog-container{
+        gap:1rem;
+
+    }
+}
+
+@media screen and (max-width: 751px) {
+    .hero-text h1{
+        font-size: 34px;
+    }
+    
+    .blog-hero{
+        flex-direction: column;
+    }
+    .box-1{
+        width: 100%;
+    }
+    .box-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .blog-hero h2{
+        font-size: 20px;
+    }
+    .blog-hero p{
+        font-size: 14px;
+    }
+    .blog-container h2{
+        font-size: 20px;
+    }
+    .blog-container p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 597px) {
+    .hero-section {
+        width: 100%;
+        align-items: center;
+        padding: 0;
+        margin-top: 7rem;
+    }
+    .blog-container{
+        flex-direction: column;
+    }
+    .blog-container-card{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    .search-bar-input input{
+        width: 60%;
+    }
+    .blog-container-card{
+        width: 100%;
+    }
 }
