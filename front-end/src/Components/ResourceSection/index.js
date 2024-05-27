@@ -45,14 +45,14 @@ const ResourceSection = () => {
               <h1>Documentation</h1>
             </div>
           </a>
-          <a href="/" className={styles.resourceCard}>
+          <Link to="/events" className={styles.resourceCard}>
             <div
               className={styles.resourceCardImg}
               style={{ backgroundImage: `url(${blogImg})` }}
             >
               <h1>Events</h1>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

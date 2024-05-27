@@ -8,6 +8,7 @@ import Error from "../Pages/Error"
 import Blog from "../Pages/Resources/Blogs/Blog";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import Event from "../Pages/Resources/Events/Event";
 
 const MainRoutes = () => {
   const location = useLocation();
@@ -21,6 +22,7 @@ const MainRoutes = () => {
         <Route path="/requestDemo" element={<RequestDemo />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/events" element={<Event />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
