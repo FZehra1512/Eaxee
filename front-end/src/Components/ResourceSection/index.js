@@ -5,9 +5,12 @@ import { Link } from "react-router-dom";
 
 
 // TODO: 1. Change hover of the divs with classnames resourceCard
-// TODO: 2. Change pictures of resource cards, currently same image use hui hai
-// TODO: 3. Update resource card links to their respective resources page sections, when resource page is ready
+// Solved: new hover effect added.
 
+// TODO: 2. Change pictures of resource cards, currently same image use hui hai
+
+// TODO: 3. Update resource card links to their respective resources page sections, when resource page is ready
+// - Blog Card is linked to its respective page. (Blog Page ready)
 
 const ResourceSection = () => {
 
