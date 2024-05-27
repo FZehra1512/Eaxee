@@ -10,7 +10,8 @@ import { Link } from "react-router-dom";
 // TODO: 2. Change pictures of resource cards, currently same image use hui hai
 
 // TODO: 3. Update resource card links to their respective resources page sections, when resource page is ready
-// - Blog Card is linked to its respective page. (Blog Page ready)
+// - Blog Card is linked to its respective page. (Blog Page ready) -> Responsive ✔
+// - Event Card is linked to its respective page. (Event Page ready) -> Responsive ✔
 
 const ResourceSection = () => {
 
