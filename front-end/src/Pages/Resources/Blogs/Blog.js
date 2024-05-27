@@ -1,10 +1,13 @@
 import React, { useEffect } from 'react'
 import '../Blogs/blogs.css'
 
+
 const Blog = () => {
+
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    // Scroll to the top of the page on mount
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className='Blog-page'>

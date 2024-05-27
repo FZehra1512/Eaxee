@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import './navbar.css';
 import logoImage from '../../Assets/eaxee x blue.png';
 import { IoMenu, IoClose } from "react-icons/io5";
 import { useMediaQuery } from "react-responsive";
 
+
 const Navbar = () => {
+
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const isMobile = useMediaQuery({ maxWidth: "768px" });
   const toggleMenu = () => {

@@ -28,14 +28,14 @@ const ResourceSection = () => {
               <h1>Blog</h1>
             </div>
           </Link>
-          <a href="/" className={styles.resourceCard}>
+          <Link to="/whitepaper" className={styles.resourceCard}>
             <div
               className={styles.resourceCardImg}
               style={{ backgroundImage: `url(${blogImg})` }}
             >
               <h1>White Paper</h1>
             </div>
-          </a>
+          </Link>
         </div>
         <div className={styles.rows}>
           <a href="/" className={styles.resourceCard}>
