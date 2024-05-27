@@ -55,11 +55,11 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink
-            to="/resources"
+            to="/blog"
             className={linkClassName}
             onClick={closeMobileMenu}
           >
-            Resources
+            Resources-Blog
           </NavLink>
         </li>
       </ul>

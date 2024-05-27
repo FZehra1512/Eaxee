@@ -83,7 +83,7 @@ const Contact = () => {
   return (
     <div>
       {/* Navbar */}
-      <Navbar />
+      {/* <Navbar /> */}
 
       {/* Contact form */}
       <div className={styles.contactContainer}>
@@ -236,7 +236,7 @@ const Contact = () => {
       </div>
 
       {/* Footer */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

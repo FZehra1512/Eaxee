@@ -318,9 +318,9 @@ const RequestDemo = () => {
       </div>
 
       {/* Footer */}
-      <div className={demostyles.footerContainer}>
+      {/* <div className={demostyles.footerContainer}>
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 };

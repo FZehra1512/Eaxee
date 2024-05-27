@@ -16,7 +16,7 @@ const Home = () => {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
 
       {/* Description Banner with Button */}
       <section id="Home">
@@ -59,7 +59,7 @@ const Home = () => {
       <ResourceSection />
 
       {/* Footer */}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
