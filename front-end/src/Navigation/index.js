@@ -4,7 +4,7 @@ import Home from '../Pages/Home';
 import RequestDemo from "../Pages/RequestDemo";
 import Contact from '../Pages/Contact';
 import Resources from "../Pages/Resources";
-import Error from "../Pages/Error"
+import Error from "../Pages/Error";
 import Blog from "../Pages/Resources/Blogs/Blog";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
@@ -16,9 +16,14 @@ const MainRoutes = () => {
   const location = useLocation();
   const hideNavbarRoutes = ['/requestDemo'];
 
+  const isErrorPage = location.pathname !== '/' &&
+    !hideNavbarRoutes.includes(location.pathname) &&
+    !['/contact', '/blog', '/events', '/whitepaper', '/documentation'].includes(location.pathname) &&
+    !location.pathname.startsWith('/resources');
+
   return (
     <>
-      {!hideNavbarRoutes.includes(location.pathname) && <Navbar />}
+      {!hideNavbarRoutes.includes(location.pathname) && !isErrorPage && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/requestDemo" element={<RequestDemo />} />
@@ -29,7 +34,7 @@ const MainRoutes = () => {
         <Route path="/documentation" element={<Documentation />} />
         <Route path="*" element={<Error />} />
       </Routes>
-      <Footer />
+      {!hideNavbarRoutes.includes(location.pathname) && !isErrorPage && <Footer />}
     </>
   );
 };
