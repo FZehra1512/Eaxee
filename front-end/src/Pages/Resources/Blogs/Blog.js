@@ -38,13 +38,13 @@ const Blog = () => {
         </div>
 
         <div className='box-2'>
-          <div className='box-2-card'>
+          {/* <div className='box-2-card'>
             <img alt='' className='box-2-card-img' src={require('../../../Assets/Meta Modeler.png')}></img>
             <div className='box-2-card-text'>
               <h2>Step-by-step: How to develop Enterprise Architecture Services</h2>
               <p>Agile enterprise architecture management practices may want to consider developing repeatable Enterprise Architecture Services.</p>
             </div>
-          </div>
+          </div> */}
           <div className='box-2-card'>
             <img alt='' className='box-2-card-img' src={require('../../../Assets/Impex.jpg')}></img>
             <div className='box-2-card-text'>
