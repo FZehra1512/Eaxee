@@ -77,11 +77,12 @@ hr {
 }
 
 /* Media Queries */
-@media screen and (max-width:768px){
-    .current-event-list{
+@media screen and (max-width:768px) {
+    .current-event-list {
         grid-template-columns: 1fr 1fr;
     }
 }
+
 @media screen and (max-width: 597px) {
     .hero-text h1 {
         font-size: 34px;

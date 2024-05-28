@@ -4,6 +4,69 @@ import '../Whitepaper/Whitepaper.css'
 // TODO: 1. replace dummy data with real data that is in whitepaper-card
 
 const Whitepaper = () => {
+    const whitepaperCardInfo = [
+            // {
+            //   title: "Enterprise Architecture Tools",
+            //   description: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+            //   lastUpdated: "Last updated 3 mins ago",
+            //   image: require('../../../Assets/images/whitepaper-1.jpg')
+            // },
+            // {
+            //   title: "Enterprise Architecture Tools",
+            //   description: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+            //   lastUpdated: "Last updated 3 mins ago",
+            //   image: require('../../../Assets/images/whitepaper-2.jpg')
+            // },
+            // {
+            //   title: "Enterprise Architecture Tools",
+            //   description: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+            //   lastUpdated: "Last updated 3 mins ago",
+            //   image: require('../../../Assets/images/whitepaper-3.jpg')
+            // },
+            // {
+            //   title: "Enterprise Architecture Tools",
+            //   description: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+            //   lastUpdated: "Last updated 3 mins ago",
+            //   image: require('../../../Assets/images/whitepaper-4.jpg')
+            // },
+            // {
+            //   title: "Enterprise Architecture Tools",
+            //   description: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+            //   lastUpdated: "Last updated 3 mins ago",
+            //   image: require('../../../Assets/images/whitepaper-5.jpg')
+            // },
+            // {
+            //   title: "Enterprise Architecture Tools",
+            //   description: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+            //   lastUpdated: "Last updated 3 mins ago",
+            //   image: require('../../../Assets/images/whitepaper-6.jpg')
+            // },
+            // {
+            //   title: "Enterprise Architecture Tools",
+            //   description: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+            //   lastUpdated: "Last updated 3 mins ago",
+            //   image: require('../../../Assets/images/whitepaper-2.jpg')
+            // },
+            // {
+            //   title: "Enterprise Architecture Tools",
+            //   description: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+            //   lastUpdated: "Last updated 3 mins ago",
+            //   image: require('../../../Assets/images/whitepaper-1.jpg')
+            // },
+            // {
+            //   title: "Enterprise Architecture Tools",
+            //   description: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+            //   lastUpdated: "Last updated 3 mins ago",
+            //   image: require('../../../Assets/images/whitepaper-4.jpg')
+            // },
+            // {
+            //   title: "Enterprise Architecture Tools",
+            //   description: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+            //   lastUpdated: "Last updated 3 mins ago",
+            //   image: require('../../../Assets/images/whitepaper-3.jpg')
+            // }
+    ];
+
 
     useEffect(() => {
         // Scroll to the top of the page on mount
@@ -23,86 +86,16 @@ const Whitepaper = () => {
             </div>
 
             <div className='whitepaper-list'>
-                <div class="whitepaper-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Enterprise Architecture Tools</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                {whitepaperCardInfo.length === 0 ? (<h2>No Whitepapers available at the moment. Please check back later.</h2>) : (whitepaperCardInfo.map((ele, index) => (
+                    <div class="whitepaper-card" key={index}>
+                        <div class="card-body">
+                            <h5 class="card-title">{ele.title}</h5>
+                            <p class="card-text">{ele.description}</p>
+                            <p class="card-text"><small class="text-body-secondary">{ele.lastUpdated}</small></p>
+                        </div>
+                        <img src={ele.image} class="card-img-bottom" alt={ele.title} />
                     </div>
-                    <img src={require('../../../Assets/images/whitepaper-1.jpg')} class="card-img-bottom" alt="..." />
-                </div>
-                <div class="whitepaper-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Enterprise Architecture Tools</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                    </div>
-                    <img src={require('../../../Assets/images/whitepaper-2.jpg')} class="card-img-bottom" alt="..." />
-                </div>
-                <div class="whitepaper-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Enterprise Architecture Tools</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                    </div>
-                    <img src={require('../../../Assets/images/whitepaper-3.jpg')} class="card-img-bottom" alt="..." />
-                </div>
-                <div class="whitepaper-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Enterprise Architecture Tools</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                    </div>
-                    <img src={require('../../../Assets/images/whitepaper-4.jpg')} class="card-img-bottom" alt="..." />
-                </div>
-                <div class="whitepaper-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Enterprise Architecture Tools</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                    </div>
-                    <img src={require('../../../Assets/images/whitepaper-5.jpg')} class="card-img-bottom" alt="..." />
-                </div>
-                <div class="whitepaper-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Enterprise Architecture Tools</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                    </div>
-                    <img src={require('../../../Assets/images/whitepaper-6.jpg')} class="card-img-bottom" alt="..." />
-                </div>
-                <div class="whitepaper-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Enterprise Architecture Tools</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                    </div>
-                    <img src={require('../../../Assets/images/whitepaper-2.jpg')} class="card-img-bottom" alt="..." />
-                </div>
-                <div class="whitepaper-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Enterprise Architecture Tools</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                    </div>
-                    <img src={require('../../../Assets/images/whitepaper-1.jpg')} class="card-img-bottom" alt="..." />
-                </div>
-                <div class="whitepaper-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Enterprise Architecture Tools</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                    </div>
-                    <img src={require('../../../Assets/images/whitepaper-4.jpg')} class="card-img-bottom" alt="..." />
-                </div>
-                <div class="whitepaper-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Enterprise Architecture Tools</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                    </div>
-                    <img src={require('../../../Assets/images/whitepaper-3.jpg')} class="card-img-bottom" alt="..." />
-                </div>
+                )))}
             </div>
         </div>
     )

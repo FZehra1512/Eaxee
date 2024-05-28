@@ -5,24 +5,24 @@ import '../Events/Event.css'
 
 const Event = () => {
     const eventsInfo = [
-        {
-            title: "ServiceNow24 | Live Event",
-            description: "Digital transformation can seem like a clear path forward, but navigating change across a complex ….",
-            dateLocation: "7 - 9 May 2024 Las Vegas, US",
-            image: require('../../../Assets/images/event-1.jpg')
-        },
-        {
-            title: "Gartner AIBS | Live Event",
-            description: "Is your organization grappling with the complexities of digital transformation? Do your senior IT …",
-            dateLocation: "7 - 9 May 2024 Las Vegas, US",
-            image: require('../../../Assets/images/event-2.jpg')
-        },
-        {
-            title: "ServiceNow24 | Live Event",
-            description: "Digital transformation can seem like a clear path forward, but navigating change across a complex ….",
-            dateLocation: "7 - 9 May 2024 Las Vegas, US",
-            image: require('../../../Assets/images/event-1.jpg')
-        },
+        // {
+        //     title: "ServiceNow24 | Live Event",
+        //     description: "Digital transformation can seem like a clear path forward, but navigating change across a complex ….",
+        //     dateLocation: "7 - 9 May 2024 Las Vegas, US",
+        //     image: require('../../../Assets/images/event-1.jpg')
+        // },
+        // {
+        //     title: "Gartner AIBS | Live Event",
+        //     description: "Is your organization grappling with the complexities of digital transformation? Do your senior IT …",
+        //     dateLocation: "7 - 9 May 2024 Las Vegas, US",
+        //     image: require('../../../Assets/images/event-2.jpg')
+        // },
+        // {
+        //     title: "ServiceNow24 | Live Event",
+        //     description: "Digital transformation can seem like a clear path forward, but navigating change across a complex ….",
+        //     dateLocation: "7 - 9 May 2024 Las Vegas, US",
+        //     image: require('../../../Assets/images/event-1.jpg')
+        // },
 
     ];
 
