@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 import Alert from "../../Components/Alert";
 import styles from "../Contact/contact.module.css";
-import Footer from "../../Components/Footer";
+// import Footer from "../../Components/Footer";
 
 
 const RequestDemo = () => {

@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 // Solved: new hover effect added.
 
 // TODO: 2. Change pictures of resource cards, currently same image use hui hai
+// Solved: new pictures are added
 
 // TODO: 3. Update resource card links to their respective resources page sections, when resource page is ready
 // - Blog Card is linked to its respective page. (Blog Page ready) -> Responsive ✔
@@ -42,14 +43,14 @@ const ResourceSection = () => {
           </Link>
         </div>
         <div className={styles.rows}>
-          <a href="/" className={styles.resourceCard}>
+          <Link to="/documentation" className={styles.resourceCard}>
             <div
               className={styles.resourceCardImg}
               style={{ backgroundImage: `url(${Documentation})` }}
             >
               <h1>Documentation</h1>
             </div>
-          </a>
+          </Link>
           <Link to="/events" className={styles.resourceCard}>
             <div
               className={styles.resourceCardImg}
