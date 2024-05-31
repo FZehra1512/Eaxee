@@ -16,12 +16,12 @@
 }
 
 .featuresBannerHeading h1 {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
 }
 
 .featuresBannerHeading p {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     margin: 20px 0;
 }
@@ -39,7 +39,7 @@
 }
 
 .featureDescription h2 {
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 700;
     text-align: left;
     color: #2F4682;
@@ -47,7 +47,7 @@
 
 .featureDescription ul li {
     list-style-type: disc;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #1D254F;
     padding-top: 30px;
     line-height: 24px;
@@ -88,22 +88,22 @@
     }
 
     .featuresBannerHeading h1 {
-        font-size: 34px;
+        font-size: 2.125rem;
         line-height: 44px;
     }
 
     .featuresBannerHeading p {
-        font-size: 18px;
+        font-size: 1.125rem;
         margin: 14px 0 0;
         line-height: 28px;
     }
 
     .featureDescription h2 {
-        font-size: 26px;
+        font-size: 1.625rem;
         line-height: 36px;
     }
 
     .featureDescription ul li {
-        font-size: 16px;
+        font-size: 1rem;
     }
 }

@@ -28,7 +28,7 @@
 
 .logoText {
     color: #000;
-    font-size: 26px;
+    font-size: 1.625rem;
     font-weight: 700;
     line-height: 19px;
     letter-spacing: 0.08em;
@@ -53,7 +53,7 @@
 }
 
 .infoCard h1 {
-    font-size: 36px;
+    font-size: 2.25rem;
     line-height: 54px;
     font-weight: 700;
     color: #1D254F;
@@ -61,7 +61,7 @@
 
 .infoCard p {
     margin-top: 30px;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 32px;
     color: #2F4682;
 }
@@ -72,18 +72,8 @@
 
 .demoPageHeadings {
     color: #2F4682;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 700;
-}
-
-.dropdownInput {
-    outline: none;
-    border: 1px solid #2f4680;
-    padding: 15px 10px;
-    width: 100%;
-    font-size: 16px;
-    color: #2F4682;
-    box-sizing: border-box;
 }
 
 #submitButton {
@@ -92,9 +82,6 @@
     margin-bottom: 30px;
 }
 
-.footerContainer {
-    margin-top: auto;
-}
 
 @media screen and (max-width: 768px) {
     .logoContainer {
@@ -111,7 +98,7 @@
     }
 
     .logoText {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .infoCard {
@@ -120,17 +107,17 @@
     }
 
     .infoCard h1 {
-        font-size: 26px;
+        font-size: 1.625rem;
         line-height: 38px;
     }
 
     .infoCard p {
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 26px;
     }
 
     .demoPageHeadings {
-        font-size: 26px;
+        font-size: 1.625rem;
     }
 
     .dropdownInput {
