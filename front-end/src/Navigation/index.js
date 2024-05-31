@@ -32,7 +32,7 @@ const MainRoutes = () => {
       )}
       <div className="content-wrap">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route path="/requestDemo" element={<RequestDemo />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
