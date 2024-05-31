@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './footer.module.css'
 import { MdEmail } from "react-icons/md";
 import { RiLinkedinBoxFill } from "react-icons/ri";
-import { RiFacebookBoxFill } from "react-icons/ri";
+// import { RiFacebookBoxFill } from "react-icons/ri";
 import { RiYoutubeFill } from "react-icons/ri";
 
 const Footer = () => {

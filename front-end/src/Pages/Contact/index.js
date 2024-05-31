@@ -1,17 +1,17 @@
 import React, { useState } from 'react'
-import Navbar from '../../Components/Navbar';
-import Footer from '../../Components/Footer';
+// import Navbar from '../../Components/Navbar';
+// import Footer from '../../Components/Footer';
 import Alert from '../../Components/Alert';
 import styles from './contact.module.css'
 import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
-import { FaLocationDot } from "react-icons/fa6";
-import { MdEmail, MdLocalPhone } from "react-icons/md";
+// import { FaLocationDot } from "react-icons/fa6";
+// import { MdEmail, MdLocalPhone } from "react-icons/md";
 
 // TODO: Location map ki integration krni hai ya sirf location card rakhna hai, Sir Ghazanfar said comment it down currently, will discuss it later
 // TODO: Location info update, add correct location
 
-const Contact = () => {
+const Contact = () => {  
   const {
     register,
     handleSubmit,

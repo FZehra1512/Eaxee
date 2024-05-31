@@ -1,5 +1,17 @@
-html {
-  scroll-behavior: smooth;
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  flex: 1;
 }
 
 * {
@@ -13,10 +25,44 @@ html {
 
 ul {
   list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 a {
   text-decoration: none;
+  color: unset;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: unset;
+  line-height: unset;
+  color: unset;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  line-height: 0;
 }
 
 .button {

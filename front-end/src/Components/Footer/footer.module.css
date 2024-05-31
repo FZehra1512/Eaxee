@@ -1,5 +1,5 @@
 .footerContainer {
-    min-width: 100vw;
+    min-width: 100%;
     height: 100px;
     background-color: #2764b0;
     display: flex;

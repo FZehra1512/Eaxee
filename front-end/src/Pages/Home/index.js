@@ -5,7 +5,6 @@ import styles from "./home.module.css";
 // import Navbar from "../../Components/Navbar";
 import animation from "../../Assets/animation.png";
 import Features from "../../Components/Features";
-import TeamMembers from "../../Components/TeamMembers";
 import MainTools from "../../Components/MainTools";
 import ResourceSection from "../../Components/ResourceSection";
 // import Footer from "../../Components/Footer";

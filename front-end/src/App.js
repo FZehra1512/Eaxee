@@ -1,10 +1,14 @@
-import './App.css';
-import MainRoutes from './Navigation';
+import React from "react";
+import "./App.css";
+import MainRoutes from "./Navigation";
 
 function App() {
   return (
-    <MainRoutes />
+    <div className="app-container">
+      <MainRoutes />
+    </div>
   );
 }
 
 export default App;
+
