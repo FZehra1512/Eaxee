@@ -86,7 +86,7 @@ const Whitepaper = () => {
             </div>
 
             <div className='whitepaper-list'>
-                {whitepaperCardInfo.length === 0 ? (<h2 style={{marginBottom:"4rem"}}>No Whitepapers available at the moment. Please check back later.</h2>) : (whitepaperCardInfo.map((ele, index) => (
+                {whitepaperCardInfo.length === 0 ? (<h2 style={{margin:"4rem",width:"100vw"}}>No Whitepapers available at the moment. Please check back later.</h2>) : (whitepaperCardInfo.map((ele, index) => (
                     <div class="whitepaper-card" key={index}>
                         <div class="card-body">
                             <h5 class="card-title">{ele.title}</h5>
