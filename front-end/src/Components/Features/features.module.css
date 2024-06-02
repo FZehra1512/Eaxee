@@ -13,6 +13,7 @@
 .featuresBannerHeading {
     text-align: center;
     color: #2F4682;
+    padding: 0 6%;
 }
 
 .featuresBannerHeading h1 {
@@ -23,7 +24,7 @@
 .featuresBannerHeading p {
     font-size: 1.25rem;
     font-weight: 400;
-    margin: 20px 0;
+    margin: 18px 0 40px;
 }
 
 .features {
@@ -94,7 +95,7 @@
 
     .featuresBannerHeading p {
         font-size: 1.125rem;
-        margin: 14px 0 0;
+        margin: 14px 0 32px;
         line-height: 28px;
     }
 

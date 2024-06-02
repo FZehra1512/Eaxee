@@ -1,34 +1,33 @@
 import React from 'react'
 import styles from './features.module.css'
-// TODO: Add correct information in featureData array
 const Features = () => {
-
     const featuresData = [
       {
-        heading: "Optimize Performance",
+        heading: "User Experience and Accessibility",
         description: [
-          "Boost user adoption, reduce frustration, and empower seamless collaboration with multiple language support",
-          "Save significant time and effort with bulk data import and export capabilities",
-          "Informed decision-making and smoother transitions with multiple architecture support",
+          "Eaxee offers a simple and intuitive user interface with multiple options for creating and editing objects, ensuring ease of use.",
+          "The Quick Access tab allows users to access frequently used objects swiftly, enhancing productivity.",
+          "Multiple filter options facilitate effective traversing, making navigation seamless and efficient.",
         ],
       },
       {
-        heading: "Minimize Costs",
+        heading: "Data Management and Flexibility",
         description: [
-          "Optimized workflows and data management for significant cost savings and improved operational effectiveness",
-          "Empower users to work smarter, not harder, and unlock higher productivity at a reduced cost per employee",
-          "Free up valuable IT resources from mundane tasks to focus on high-impact initiatives that deliver greater ROI",
+          "Eaxee supports bulk data import and export, streamlining the process of managing large datasets.",
+          "It provides multiple downloadable formats, allowing users to choose the format that best suits their needs.",
+          "The platform's tree-based hierarchical model management enables structured and organized data representation.",
         ],
       },
       {
-        heading: "Mitigate Risks",
+        heading: "Customization and Global Reach",
         description: [
-          "Boost user adoption, reduce frustration, and empower seamless collaboration with multiple language support",
-          "Save significant time and effort with bulk data import and export capabilities",
-          "Informed decision-making and smoother transitions with multiple architecture support",
+          "Eaxee features a highly configurable metamodel, allowing organizations to tailor the platform to their specific requirements.",
+          "Configurable dashboards, catalogues, and matrices provide users with the ability to customize their views and analyses.",
+          "Additionally, the platform's multilingual support ensures accessibility for users worldwide.",
         ],
       },
     ];
+
 
     const Feature = ({ heading, description }) => (
       <div className={styles.featureDescription}>
@@ -45,8 +44,17 @@ const Features = () => {
   return (
     <div className={styles.featuresBanner}>
       <div className={styles.featuresBannerHeading}>
-        <h1>Transform your IT landscape</h1>
-        <p>Simplify architecture management and accelerate something</p>
+        <h1>What is Eaxee?</h1>
+        <p>
+          Eaxee is a highly configurable Enterprise Architecture Management
+          web-based platform that provides intuitive capabilities and
+          functionalities for designing, analyzing, planning, and executing
+          enterprise architecture (EA) led digital transformation across any
+          organization.{" "}
+        </p>
+      </div>
+      <div className={styles.featuresBannerHeading}>
+        <h1>Why Eaxee?</h1>
       </div>
       <div className={styles.features}>
         {featuresData.map((feature, index) => (
