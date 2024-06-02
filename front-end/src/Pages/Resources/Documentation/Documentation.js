@@ -49,7 +49,7 @@ const Documentation = () => {
             </div>
 
             <div className='Documentation-list'>
-                {cardInfo.length === 0 ? (<h2>No Documentaion available at the moment. Please check back later.</h2>) : (
+                {cardInfo.length === 0 ? (<h2 style={{width:"100vw",margin:"4rem"}}>No Documentaion available at the moment. Please check back later.</h2>) : (
 
                     cardInfo.map((ele, index) => (
                         <div class="card" key={index}>
