@@ -1,6 +1,6 @@
 .overlay {
     position: fixed;
-    top: 50px;
+    top: 0px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -8,15 +8,20 @@
     transition: opacity 500ms;
     visibility: visible;
     opacity: 1;
+    z-index: 10000;
 }
 
 .popup {
-    margin: 70px auto;
+    margin: 100px auto;
     padding: 20px;
     background: #fff;
     width: 30%;
-    position: relative;
     transition: all 5s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    column-gap: 1rem;
 }
 
 .success {
@@ -28,21 +33,19 @@
 }
 
 .popup .close {
-    position: absolute;
-    top: 10px;
-    right: 30px;
     transition: all 200ms;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: bold;
     text-decoration: none;
     background: transparent;
     border: none;
-    color: #333;
+    color: #000;
 }
 
 .popup .content {
     max-height: 30%;
     overflow: auto;
+    font-size: 1.125rem;
 }
 
 @media screen and (max-width: 700px) {
@@ -52,5 +55,9 @@
 
     .popup {
         width: 70%;
+    }
+
+    .popup .content {
+        font-size: 1rem;
     }
 }
