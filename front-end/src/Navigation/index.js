@@ -11,6 +11,7 @@ import Event from "../Pages/Resources/Events/Event";
 import Whitepaper from "../Pages/Resources/Whitepaper/Whitepaper";
 import Documentation from "../Pages/Resources/Documentation/Documentation";
 import ScrollToTop from "../Components/ScrollToTop";
+import BlogPage from "../Pages/Resources/Blogs/blogPage";
 
 const MainRoutes = () => {
   const location = useLocation();
@@ -19,10 +20,14 @@ const MainRoutes = () => {
   const isErrorPage =
     location.pathname !== "/" &&
     !hideNavbarRoutes.includes(location.pathname) &&
-    !["/contact", "/blog", "/events", "/whitepaper", "/documentation"].includes(
-      location.pathname
-    ) &&
-    !location.pathname.startsWith("/resources");
+    ![
+      "/contact",
+      "/blog",
+      "/events",
+      "/whitepaper",
+      "/documentation",
+    ].includes(location.pathname) &&
+    !location.pathname.startsWith("/blog/");
 
   return (
     <>
@@ -39,7 +44,11 @@ const MainRoutes = () => {
           <Route path="/events" element={<Event />} />
           <Route path="/whitepaper" element={<Whitepaper />} />
           <Route path="/documentation" element={<Documentation />} />
-          <Route path="*" element={<Error />} />
+          <Route path="/blog/:id" element={<BlogPage />} />
+          <Route
+            path="*"
+            element={<Error text="No such page exists on eaxee.com" />}
+          />
         </Routes>
       </div>
       {!isErrorPage && <Footer />}

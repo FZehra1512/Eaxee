@@ -73,7 +73,7 @@ hr {
     display: flex;
     justify-content: space-around;
     height: 100%;
-    padding: 6%;
+    padding: 0 6% 6%;
 }
 
 .box-1-card {
@@ -177,8 +177,8 @@ hr {
 
 .blog-list {
     /* border: 1px solid red; */
-    padding: 6%;
-    margin: 2rem;
+    padding: 0 6% 6%;
+    margin: 0 1rem 1rem;
 }
 
 .heading {
@@ -191,7 +191,7 @@ hr {
     margin-top: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
+    place-items: flex-start;
     /* flex-direction: row; */
     /* flex-wrap: wrap; */
     /* justify-content: space-between; */

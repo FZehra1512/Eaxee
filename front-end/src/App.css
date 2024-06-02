@@ -57,6 +57,14 @@ h6 {
   color: unset;
 }
 
+dl,
+ol,
+ul 
+{
+  padding: 0;
+  margin: 0;
+}
+
 .button {
   box-sizing: border-box;
   background-color: #2764b0;
