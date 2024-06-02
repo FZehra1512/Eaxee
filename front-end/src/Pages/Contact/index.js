@@ -1,15 +1,10 @@
 import React, { useState } from 'react'
-// import Navbar from '../../Components/Navbar';
-// import Footer from '../../Components/Footer';
 import Alert from '../../Components/Alert';
 import styles from './contact.module.css'
 import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
-// import { FaLocationDot } from "react-icons/fa6";
-// import { MdEmail, MdLocalPhone } from "react-icons/md";
 
 // TODO: Location map ki integration krni hai ya sirf location card rakhna hai, Sir Ghazanfar said comment it down currently, will discuss it later
-// TODO: Location info update, add correct location
 
 const Contact = () => {  
   const {
@@ -61,12 +56,12 @@ const Contact = () => {
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
         templateParams,
-        process.env.REACT_APP_USER_ID
+        process.env.REACT_APP_PUBLIC_KEY
       );
 
       // TODO:Receiver Email ID set krni hai, email js ki website pr ja kr template bhi set krni hai
 
-      toggleAlert("Form submission was successful!", "success");
+      toggleAlert("Form submission successful!", "success");
     } catch (e) {
       console.error(e);
       toggleAlert("Uh oh. Something went wrong.", "danger");
@@ -80,8 +75,6 @@ const Contact = () => {
 
   return (
     <div>
-      {/* Navbar */}
-      {/* <Navbar /> */}
 
       {/* Contact form */}
       <div className={styles.contactContainer}>
@@ -205,36 +198,6 @@ const Contact = () => {
         onClose={() => setAlertInfo({ display: false, message: "", type: "" })}
       />
 
-      {/* Location Card */}
-      {/* Location TODO: Map or a picture */}
-      {/* <div className={styles.locationSection}>
-        <div className={styles.container}>
-          <h1 className={styles.contactPageHeadings}>Location</h1>
-          <div className={styles.locationCard}>
-            <div className={styles.mapCard}>Map</div>
-            <div className={styles.officeInfoCard}>
-              <h2>Office Name</h2>
-              <div className={styles.officeInfo}>
-                <div className={styles.infoRow}>
-                  <FaLocationDot className={styles.infoIcon} />
-                  <p>C-93/13 Gulistan-e-Jauhar, Karachi, Pakistan</p>
-                </div>
-                <div className={styles.infoRow}>
-                  <MdEmail className={styles.infoIcon} />
-                  <p>info@lambdatheta.com</p>
-                </div>
-                <div className={styles.infoRow}>
-                  <MdLocalPhone className={styles.infoIcon} />
-                  <p>+92-21-34011685</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
-      {/* Footer */}
-      {/* <Footer /> */}
     </div>
   );
 }

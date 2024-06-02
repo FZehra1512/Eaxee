@@ -6,18 +6,6 @@ import Documentation from "../../Assets/images/Documentation.webp";
 import Whitepaper from "../../Assets/images/Whitepaper.jpg";
 import { Link } from "react-router-dom";
 
-
-// TODO: 1. Change hover of the divs with classnames resourceCard
-// Solved: new hover effect added.
-
-// TODO: 2. Change pictures of resource cards, currently same image use hui hai
-// Solved: new pictures are added
-
-// TODO: 3. Update resource card links to their respective resources page sections, when resource page is ready
-// - Blog Card is linked to its respective page. (Blog Page ready) -> Responsive ✔
-// - Event Card is linked to its respective page. (Event Page ready) -> Responsive ✔
-// - Whitepaper Card is linked to its respective page. (Whitepaper Page ready) -> Responsive ✔
-
 const ResourceSection = () => {
 
   return (

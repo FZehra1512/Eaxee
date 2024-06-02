@@ -6,7 +6,6 @@ import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 import Alert from "../../Components/Alert";
 import styles from "../Contact/contact.module.css";
-// import Footer from "../../Components/Footer";
 
 
 const RequestDemo = () => {
@@ -59,9 +58,9 @@ const RequestDemo = () => {
 
       await emailjs.send(
         process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
+        process.env.REACT_APP_DEMO_TEMPLATE_ID,
         templateParams,
-        process.env.REACT_APP_USER_ID
+        process.env.REACT_APP_PUBLIC_KEY
       );
 
       // TODO:Receiver Email ID set krni hai

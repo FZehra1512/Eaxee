@@ -16,8 +16,6 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    // TODO:Add actual trademark and social links on icons
-    // TODO: Should Change Mobile View, currently its not looking good
     <footer className={styles.footerContainer}>
       <div className={styles.websiteLinks}>
         <Link to="/#Home" className={styles.weblink}>

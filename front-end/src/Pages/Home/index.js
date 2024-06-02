@@ -2,12 +2,10 @@ import React, { useRef, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import styles from "./home.module.css";
-// import Navbar from "../../Components/Navbar";
-import animation from "../../Assets/animation.png";
+import animation from "../../Assets/eaxee organization.jpg";
 import Features from "../../Components/Features";
 import MainTools from "../../Components/MainTools";
 import ResourceSection from "../../Components/ResourceSection";
-// import Footer from "../../Components/Footer";
 
 const Home = () => {
   const aboutRef = useRef(null);
@@ -30,8 +28,6 @@ const Home = () => {
 
   return (
     <>
-      {/* <Navbar /> */}
-
       {/* Description Banner with Button */}
       <section ref={homeRef} id="Home">
         <div className={styles.banner}>
@@ -70,9 +66,6 @@ const Home = () => {
       <section ref={resourceRef} id="resourceSection">
         <ResourceSection />
       </section>
-
-      {/* Footer */}
-      {/* <Footer /> */}
     </>
   );
 };
