@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
-import { Link, useParams, useLocation } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import blogs from "../blogObject";
 import Error from "../../../Error";
 import styles from "./blogPage.module.css";
@@ -35,8 +35,7 @@ const BlogPage = () => {
     }
   }, [blog]);
 
-  const location = useLocation();
-  const blogUrl = `${window.location.origin}${location.pathname}${location.search}${location.hash}`;
+  const blogUrl = window.location.href;
   const encodedBlogUrl = encodeURIComponent(blogUrl);
 
   if (!blog) {
