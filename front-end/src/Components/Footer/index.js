@@ -13,6 +13,8 @@ const Footer = () => {
     setIsOpen(!isOpen);
   };
 
+  const currentYear = new Date().getFullYear();
+
   return (
     // TODO:Add actual trademark and social links on icons
     // TODO: Should Change Mobile View, currently its not looking good
@@ -56,7 +58,7 @@ const Footer = () => {
       </div>
 
       <div className={styles.footer}>
-        <p>©2024 Eaxee | All rights reserved</p>
+        <p>©{currentYear} Eaxee | All rights reserved</p>
         <div className={styles.socialLinks}>
           <a href="/" target="_blank" rel="noopener noreferrer">
             <MdEmail />
