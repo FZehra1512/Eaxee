@@ -1,21 +1,40 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import styles from "./home.module.css";
 import animation from "../../Assets/eaxee organization.jpg";
 import Features from "../../Components/Features";
 import MainTools from "../../Components/MainTools";
+import animationvideo1 from "../../Assets/videos/Diagram Compresed.mkv"
+import animationvideo2 from "../../Assets/videos/Navigation(1).mkv"
+import animationvideo3 from "../../Assets/videos/Roadmap.mkv"
 import ResourceSection from "../../Components/ResourceSection";
 
 const Home = () => {
+  const [selectedVideo, setSelectedVideo] = useState('');
   const aboutRef = useRef(null);
   const resourceRef = useRef(null);
   const homeRef = useRef(null);
+  // const videos = [
+  //   animationvideo1,
+  //   animationvideo2,
+  // ];
+
 
   const { hash } = useLocation();
 
   useEffect(() => {
-    if (hash === "#about" && aboutRef.current ) {
+    const videos = [
+      animationvideo1,
+      animationvideo2,
+      animationvideo3
+    ];
+    const randomIndex = Math.floor(Math.random() * videos.length);
+    setSelectedVideo(videos[randomIndex]);
+  }, []);
+
+  useEffect(() => {
+    if (hash === "#about" && aboutRef.current) {
       aboutRef.current.scrollIntoView({ behavior: "smooth" });
     }
     if (hash === "#resourceSection" && resourceRef.current) {
@@ -44,12 +63,16 @@ const Home = () => {
             </button>
           </Link>
 
-          {/* Animation TODO: Add real animation when available, remove the png image */}
-          <img
-            src={animation}
+          <video
+            src={selectedVideo}
             alt="Animation"
             className={styles.animation}
-          ></img>
+            autoPlay
+            loop
+            muted
+          >
+            Your browser does not support the video tag.
+          </video>
         </div>
       </section>
 
