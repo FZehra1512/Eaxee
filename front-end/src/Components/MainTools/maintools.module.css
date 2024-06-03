@@ -3,7 +3,7 @@
 .mainTools {
     display: flex;
     flex-direction: column;
-    padding: 5% 18% 0%;
+    padding: 5% 18%;
     box-sizing: border-box
 }
 
