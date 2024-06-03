@@ -45,7 +45,13 @@ hr{
     color: #222F4B;
     font-weight: 700;
 }
-
+.div{
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+    padding: 6%;
+}
 @media screen and (max-width:1183px) {
     .Documentation-list{
         grid-template-columns: 1fr 1fr;

@@ -56,7 +56,7 @@ const Event = () => {
                     }
                     <div className='current-event-list'>
                         {eventsInfo.length === 0 ? (
-                            <h2 style={{width:"100vw",margin:"4rem"}}>No events available at the moment. Please check back later.</h2>
+                            <div className='div'> <h2>No events available at the moment. Please check back later.</h2></div>
                         ) : (
                             eventsInfo.map((event, index) => (
                                 <div className="card mb-1" key={index}>

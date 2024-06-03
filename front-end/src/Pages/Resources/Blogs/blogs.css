@@ -170,9 +170,6 @@ hr {
 .box-1,
 .box-2 {
     width: 50%;
-    /* border: 1px solid red; */
-    /* padding: 20px; */
-    /* margin: 1px; */
 }
 
 .blog-list {
@@ -191,11 +188,6 @@ hr {
     margin-top: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    place-items: flex-start;
-    /* flex-direction: row; */
-    /* flex-wrap: wrap; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
     gap: 3rem;
 }
 
@@ -275,6 +267,9 @@ hr {
     .box-2{
         width: 100%;
     }
+    .box-2-card{
+        margin-top: 4rem ;
+    }
 }
 
 
@@ -313,7 +308,7 @@ hr {
         grid-template-columns: 1fr;
     }
     .blog-container-card{
-        width: 110%;
+        width: 100%;
     }
 
 }

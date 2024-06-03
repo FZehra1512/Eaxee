@@ -75,6 +75,14 @@ hr {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+.div{
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+    padding: 6%;
+}
 
 /* Media Queries */
 @media screen and (max-width:768px) {
