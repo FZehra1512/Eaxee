@@ -12,6 +12,9 @@ const Footer = () => {
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
+  const openMail = () => {
+    window.location.href = "mailto:info@eaxee.com";
+}
 
   const currentYear = new Date().getFullYear();
 
@@ -62,10 +65,10 @@ const Footer = () => {
       <div className={styles.footer}>
         <p>©{currentYear} Eaxee | All rights reserved</p>
         <div className={styles.socialLinks}>
-          <a href="/" target="_blank" rel="noopener noreferrer">
+          <a onClick={openMail} href="mailto:info@eaxee.com" target="_blank" rel="noopener noreferrer">
             <MdEmail />
           </a>
-          <a href="/" target="_blank" rel="noopener noreferrer">
+          <a href="" target="_blank" rel="noopener noreferrer">
             <RiLinkedinBoxFill />
           </a>
           <a
