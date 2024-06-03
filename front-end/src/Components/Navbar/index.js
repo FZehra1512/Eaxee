@@ -42,13 +42,23 @@ const Navbar = () => {
               About Us
             </NavLink>
           </li>
-          <li className={liClassName}>
+        {/* comment for temporary purpose, when other resources will be ready this option will continue to show */}
+          {/* <li className={liClassName}>
             <NavLink
               to="/#resourceSection"
               className={linkClassName}
               onClick={closeMobileMenu}
             >
               Resources
+            </NavLink>
+          </li> */}
+          <li className={liClassName}>
+            <NavLink
+              to="/blog"
+              className={linkClassName}
+              onClick={closeMobileMenu}
+            >
+              Blogs
             </NavLink>
           </li>
           <li className={liClassName}>

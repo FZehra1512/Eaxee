@@ -1,4 +1,4 @@
-.hero-section{
+.hero-section {
     /* border: 1px solid red; */
     padding: 5rem;
     text-align: center;
@@ -9,17 +9,17 @@
     align-items: center;
     gap: 4rem;
     margin-top: 4rem;
-    /* background: linear-gradient(to bottom, #2764b0, transparent); */
 }
 
-.hero-text h1{
+.hero-text h1 {
     font-size: 48px;
     text-align: center;
     color: #222F4B;
     text-transform: uppercase;
     font-weight: 800;
 }
-hr{
+
+hr {
     border: 0;
     height: 2px;
     width: 50%;
@@ -27,9 +27,9 @@ hr{
     margin: auto;
     background-image: linear-gradient(to right, rgba(230, 223, 223, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
-.Documentation-list{
+
+.Documentation-list {
     /* border: 1px solid red ; */
-    /* height: 20rem ; */
     padding: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -37,28 +37,41 @@ hr{
     gap: 2rem;
     margin-bottom: 4rem;
 }
-.card{
+
+.card {
     width: 22rem;
     cursor: pointer;
 }
-.card-body h6{
+
+.card-body h6 {
     color: #222F4B;
     font-weight: 700;
 }
 
+.div {
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+    padding: 6%;
+}
+
 @media screen and (max-width:1183px) {
-    .Documentation-list{
+    .Documentation-list {
         grid-template-columns: 1fr 1fr;
     }
 }
+
 @media screen and (max-width:777px) {
-    .Documentation-list{
+    .Documentation-list {
         grid-template-columns: 1fr;
     }
-    .card{
+
+    .card {
         width: 100%;
     }
-    .hero-text h1{
+
+    .hero-text h1 {
         font-size: 30px;
     }
 }

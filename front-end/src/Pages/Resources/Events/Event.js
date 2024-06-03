@@ -26,8 +26,6 @@ const Event = () => {
 
     ];
 
-    console.log(eventsInfo);
-
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
@@ -43,7 +41,7 @@ const Event = () => {
                 </div>
                 <div className='search-bar'>
                     <div className='search-bar-text'><h2>Where to meet us </h2></div>
-                    <p>Platform Customer success Our mission and approach Resources Bizzdesign Academy EN Events Home Events Where to meet us Come and meet us at one of our events worldwide to find out how Bizzdesign and Enterprise Studio can help you design your digital business. Grab a coffee and share ideas and best practices with our experts. Take a look at our events below to see what’s happening near you. If there are no upcoming events in your area, then join the discussion on <a href='#'>LinkedIn</a> or <a href='#'>Twitter</a></p>
+                    <p>Join us at one of our upcoming events to explore how Eaxee, our highly configurable Enterprise Architecture Management platform, can revolutionize your organization's digital transformation journey. Engage with our experts, discover our latest features, and learn how Eaxee can empower your enterprise architecture initiatives. Take a look at our events below to see what’s happening near you. If there are no upcoming events in your area, then join the discussion on <a href='/'>LinkedIn</a> or <a href='/'>Twitter</a></p>
                 </div>
             </div>
 
@@ -56,7 +54,7 @@ const Event = () => {
                     }
                     <div className='current-event-list'>
                         {eventsInfo.length === 0 ? (
-                            <h2 style={{width:"100vw",margin:"4rem"}}>No events available at the moment. Please check back later.</h2>
+                            <div className='div'> <h2>No events available at the moment. Please check back later.</h2></div>
                         ) : (
                             eventsInfo.map((event, index) => (
                                 <div className="card mb-1" key={index}>

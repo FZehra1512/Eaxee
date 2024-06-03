@@ -9,7 +9,6 @@
     align-items: center;
     gap: 4rem;
     margin-top: 4rem;
-    /* background: linear-gradient(to bottom, #2764b0, transparent); */
 }
 
 .hero-text h1 {
@@ -55,6 +54,14 @@ hr {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+}
+
+.div {
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+    padding: 6%;
 }
 
 @media screen and (max-width: 956px) {
