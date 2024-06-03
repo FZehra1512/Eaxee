@@ -8,7 +8,6 @@
     justify-content: center;
     gap: 4rem;
     margin-top: 4rem;
-    /* background: linear-gradient(to bottom, #2764b0, transparent); */
 }
 
 .hero-section div:first-child {
@@ -46,7 +45,6 @@ hr {
 }
 
 .search-bar-input input {
-    /* border-radius: 50px 0px 0px 50px; */
     outline: none;
     padding: 15px;
     background-color: rgb(236, 234, 234);
@@ -55,7 +53,6 @@ hr {
 }
 
 .search-btn {
-    /* border-radius: 0px 50px 50px 0px; */
     background-color: #2764b0;
     padding: 15px;
     border: none;
@@ -258,17 +255,21 @@ hr {
     .blog-container {
         gap: 3rem;
     }
+
     .blog-hero {
         flex-direction: column;
     }
+
     .box-1 {
         width: 100%;
     }
-    .box-2{
+
+    .box-2 {
         width: 100%;
     }
-    .box-2-card{
-        margin-top: 4rem ;
+
+    .box-2-card {
+        margin-top: 4rem;
     }
 }
 
@@ -277,7 +278,8 @@ hr {
     .blog-container {
         grid-template-columns: 1fr 1fr;
     }
-    .blog-container-card{
+
+    .blog-container-card {
         width: 100%;
     }
 }
@@ -286,6 +288,7 @@ hr {
     .hero-text h1 {
         font-size: 34px;
     }
+
     .blog-hero h2 {
         font-size: 20px;
     }
@@ -304,14 +307,16 @@ hr {
 }
 
 @media screen and (max-width: 600px) {
-    .blog-container{
+    .blog-container {
         grid-template-columns: 1fr;
     }
-    .blog-container-card{
+
+    .blog-container-card {
         width: 100%;
     }
 
 }
+
 @media screen and (max-width: 597px) {
     .hero-section {
         width: 100%;
@@ -323,31 +328,24 @@ hr {
     .blog-container {
         flex-direction: column;
     }
-
-    /* .blog-container-card {
-        width: 100%;
-    } */
-
 }
 
 @media screen and (max-width: 350px) {
     .search-bar-input input {
         width: 60%;
     }
-
-    /* .blog-container-card {
-        width: 100%;
-    } */
-
 }
 
 @media screen and (max-width: 462px) {
-    .box-2-card{
+    .box-2-card {
         flex-direction: column;
     }
-    .box-2-card-img, .box-2-card-text{
+
+    .box-2-card-img,
+    .box-2-card-text {
         width: 100%;
     }
+
     .search-bar-input input {
         border-radius: 5px 5px 5px 5px;
         width: 100%;

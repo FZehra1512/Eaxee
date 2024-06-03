@@ -9,7 +9,6 @@
     align-items: center;
     gap: 4rem;
     margin-top: 4rem;
-    /* background: linear-gradient(to bottom, #2764b0, transparent); */
 }
 
 .hero-text h1 {
@@ -56,13 +55,15 @@ hr {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
-.div{
+
+.div {
     display: flex;
     width: 90vw;
     justify-content: center;
     align-items: center;
     padding: 6%;
 }
+
 @media screen and (max-width: 956px) {
     .whitepaper-list {
         grid-template-columns: 1fr 1fr;

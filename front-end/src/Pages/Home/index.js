@@ -64,7 +64,8 @@ const Home = () => {
 
       {/* Resources */}
       <section ref={resourceRef} id="resourceSection">
-        <ResourceSection />
+        {/* comment for temporary purpose, when other resources will be ready this section will continue to show */}
+        {/* <ResourceSection /> */}
       </section>
     </>
   );

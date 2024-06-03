@@ -8,7 +8,6 @@
     justify-content: center;
     gap: 4rem;
     margin-top: 4rem;
-    /* background: linear-gradient(to bottom, #2764b0, transparent); */
 }
 
 .hero-section div:first-child {
@@ -37,12 +36,7 @@ hr {
 
 .Event-hero {
     /* border: 1px solid red; */
-    /* height: 50rem; */
     padding: 10px;
-}
-
-.current-event {
-    /* border: 1px solid green; */
 }
 
 .current-event span {
@@ -75,7 +69,8 @@ hr {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-.div{
+
+.div {
     display: flex;
     flex-direction: row;
     width: 90vw;

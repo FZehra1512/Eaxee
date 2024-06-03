@@ -30,8 +30,12 @@ const Footer = () => {
         <Link to="/requestDemo" className={styles.weblink}>
           Request Demo
         </Link>
+        <Link to="/blog" className={styles.weblink}>
+          Blogs
+        </Link>
 
-        <div className={styles.resourcesLinks}>
+        {/* comment for temporary purpose, when other resources will be ready this option will continue to show */}
+        {/* <div className={styles.resourcesLinks}>
           <button onClick={toggleDropdown} className={styles.dropdownButton}>
             Resources{" "}
             <IoMdArrowDropdown className={styles.dropdownButtonIcon} />
@@ -52,7 +56,7 @@ const Footer = () => {
               - Events
             </Link>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className={styles.footer}>

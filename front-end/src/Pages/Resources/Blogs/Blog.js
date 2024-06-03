@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import '../Blogs/blogs.css';
 import blogs from './blogObject';
 import { Link } from 'react-router-dom';
@@ -35,7 +35,8 @@ const Blog = () => {
       const lowerCaseQuery = query.toLowerCase();
       const filtered = blogs.filter(blog =>
         blog.title.toLowerCase().includes(lowerCaseQuery) ||
-        blog.description.toLowerCase().includes(lowerCaseQuery)
+        blog.description.toLowerCase().includes(lowerCaseQuery) ||
+        blog.author.toLowerCase().includes(lowerCaseQuery)
       );
       setFilteredBlogs(filtered);
     }
