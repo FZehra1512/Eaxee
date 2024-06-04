@@ -12,6 +12,7 @@ import Whitepaper from "../Pages/Resources/Whitepaper/Whitepaper";
 import Documentation from "../Pages/Resources/Documentation/Documentation";
 import ScrollToTop from "../Components/ScrollToTop";
 import BlogPage from "../Pages/Resources/Blogs/blogPage";
+import Video from "../Pages/Resources/Videos/Video";
 
 const MainRoutes = () => {
   const location = useLocation();
@@ -26,6 +27,7 @@ const MainRoutes = () => {
       "/events",
       "/whitepaper",
       "/documentation",
+      "/videos"
     ].includes(location.pathname) &&
     !location.pathname.startsWith("/blog/");
 
@@ -44,6 +46,7 @@ const MainRoutes = () => {
           <Route path="/events" element={<Event />} />
           <Route path="/whitepaper" element={<Whitepaper />} />
           <Route path="/documentation" element={<Documentation />} />
+          <Route path="/videos" element={<Video />} />
           <Route path="/blog/:id" element={<BlogPage />} />
           <Route
             path="*"
