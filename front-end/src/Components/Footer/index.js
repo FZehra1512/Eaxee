@@ -33,12 +33,8 @@ const Footer = () => {
         <Link to="/requestDemo" className={styles.weblink}>
           Request Demo
         </Link>
-        <Link to="/blog" className={styles.weblink}>
-          Blogs
-        </Link>
 
-        {/* comment for temporary purpose, when other resources will be ready this option will continue to show */}
-        {/* <div className={styles.resourcesLinks}>
+        <div className={styles.resourcesLinks}>
           <button onClick={toggleDropdown} className={styles.dropdownButton}>
             Resources{" "}
             <IoMdArrowDropdown className={styles.dropdownButtonIcon} />
@@ -47,9 +43,12 @@ const Footer = () => {
             className={`${styles.dropdownContent} ${isOpen ? styles.show : ""}`}
           >
             <Link to="/blog" className={styles.weblink}>
-              - Blog
+              - Blogs
             </Link>
-            <Link to="/whitepaper" className={styles.weblink}>
+            <Link to="/videos" className={styles.weblink}>
+              - Demo Videos
+            </Link>
+            {/* <Link to="/whitepaper" className={styles.weblink}>
               - Whitepaper
             </Link>
             <Link to="/documentation" className={styles.weblink}>
@@ -57,15 +56,20 @@ const Footer = () => {
             </Link>
             <Link to="/events" className={styles.weblink}>
               - Events
-            </Link>
+            </Link> */}
           </div>
-        </div> */}
+        </div>
       </div>
 
       <div className={styles.footer}>
         <p>©{currentYear} Eaxee | All rights reserved</p>
         <div className={styles.socialLinks}>
-          <a onClick={openMail} href="mailto:info@eaxee.com" target="_blank" rel="noopener noreferrer">
+          <a
+            onClick={openMail}
+            href="mailto:info@eaxee.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <MdEmail />
           </a>
           <a href="" target="_blank" rel="noopener noreferrer">
