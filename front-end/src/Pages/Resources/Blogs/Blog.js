@@ -55,7 +55,7 @@ const Blog = () => {
         </div>
         <div className="search-bar">
           <div className="search-bar-text">
-            <h2>Explore Our Blog – Insights and Ideas Await!</h2>
+            <h3>Explore Our Blog – Insights and Ideas Await!</h3>
           </div>
           <div className="search-bar-input">
             <input
