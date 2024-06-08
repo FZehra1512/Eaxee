@@ -56,12 +56,6 @@ const Home = () => {
             </p>
           </div>
 
-          <Link to="/requestDemo" style={{ color: "#fff" }}>
-            <button className="button" id={styles.homeButton}>
-              Request a Demo
-            </button>
-          </Link>
-
           <video
             src={selectedVideo}
             alt="Animation"
@@ -83,6 +77,18 @@ const Home = () => {
         {/* Eaxee Tools Description */}
         <MainTools />
       </section>
+
+      <div className={styles.demoContainer}>
+        <h1>
+          Unlock the future of seamless digital transformation – Click 'Request Demo'
+          now and transform your enterprise architecture!
+        </h1>
+        <Link to="/requestDemo" style={{ color: "#fff" }}>
+          <button className="button" id={styles.homeButton}>
+            Request a Demo
+          </button>
+        </Link>
+      </div>
 
       {/* Resources */}
       <section ref={resourceRef} id="resourceSection">
