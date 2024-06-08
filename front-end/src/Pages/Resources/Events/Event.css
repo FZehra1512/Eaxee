@@ -1,5 +1,7 @@
-.hero-section {
-    /* border: 1px solid red; */
+.Event-page {
+    min-height: 100vh;
+}
+/* .hero-section {
     padding: 5rem;
     text-align: center;
     color: #2764b0;
@@ -17,12 +19,11 @@
     gap: 30px;
 }
 
-.hero-text h1 {
-    font-size: 48px;
+.Event-page .hero-text h1 {
+    font-size: 3rem;
     text-align: center;
-    color: #222F4B;
-    text-transform: uppercase;
-    font-weight: 800;
+    color: #2F4682;
+    font-weight: 700;
 }
 
 hr {
@@ -32,7 +33,7 @@ hr {
     display: block;
     margin: auto;
     background-image: linear-gradient(to right, rgba(230, 223, 223, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-}
+} */
 
 .Event-hero {
     /* border: 1px solid red; */
@@ -87,9 +88,6 @@ hr {
 }
 
 @media screen and (max-width: 597px) {
-    .hero-text h1 {
-        font-size: 34px;
-    }
 
     .current-event-list {
         grid-template-columns: 1fr;
