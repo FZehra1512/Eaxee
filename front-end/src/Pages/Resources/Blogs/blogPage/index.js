@@ -61,13 +61,13 @@ const BlogPage = () => {
         <hr className={styles.linebreak}></hr>
 
         <div className={styles.shareLinks}>
-          <a
+          {/* <a
             href={`https://www.facebook.com/sharer/sharer.php?u=${encodedBlogUrl}`}
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaFacebookSquare />
-          </a>
+          </a> */}
           <a
             href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodedBlogUrl}`}
             target="_blank"
@@ -75,13 +75,13 @@ const BlogPage = () => {
           >
             <FaLinkedin />
           </a>
-          <a
+          {/* <a
             href={`https://twitter.com/intent/tweet?url=${encodedBlogUrl}`}
             target="_blank"
             rel="noopener noreferrer"
           >
             <RiTwitterXLine />
-          </a>
+          </a> */}
         </div>
 
         <div className={styles.blogContent}>

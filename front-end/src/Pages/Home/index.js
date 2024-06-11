@@ -5,9 +5,9 @@ import styles from "./home.module.css";
 import animation from "../../Assets/eaxee organization.jpg";
 import Features from "../../Components/Features";
 import MainTools from "../../Components/MainTools";
-import animationvideo1 from "../../Assets/videos/Diagram Compresed.mkv"
-import animationvideo2 from "../../Assets/videos/Navigation(1).mkv"
-import animationvideo3 from "../../Assets/videos/Roadmap.mkv"
+import animationvideo1 from "../../Assets/videos/animation_1.mkv"
+import animationvideo2 from "../../Assets/videos/animation_2.mkv"
+import animationvideo3 from "../../Assets/videos/animation_3.mkv"
 import ResourceSection from "../../Components/ResourceSection";
 
 const Home = () => {
