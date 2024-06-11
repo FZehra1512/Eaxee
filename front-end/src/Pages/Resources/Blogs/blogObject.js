@@ -1,7 +1,7 @@
 import blog1Img from "../../../Assets/blogImages/blog1Img1.jpg"
 import blog2Img from "../../../Assets/blogImages/blog2Img1.jpg";
 import blog3Img from "../../../Assets/blogImages/blog3Img1.jpg";
-import blog4Img from "../../../Assets/blogImages/blog4Img1.png";
+import blog4Img from "../../../Assets/blogImages/blog4Img1.jpg";
 
 
 const blogs = [
@@ -45,6 +45,7 @@ const blogs = [
       "Organizations, especially smaller to mid-sized, often come across a question whether to invest in an EA tool or not.",
     contentPath: "/data/blog4.md",
   },
+
 ];
 
 export default blogs;

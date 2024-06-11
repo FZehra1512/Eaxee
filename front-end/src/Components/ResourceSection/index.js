@@ -1,9 +1,10 @@
 import React from 'react';
 import styles from './resourceSection.module.css'
 import blogImg from "../../Assets/blog.jpg";
-import Event from "../../Assets/images/Event.jpeg";
-import Documentation from "../../Assets/images/Documentation.webp";
-import Whitepaper from "../../Assets/images/Whitepaper.jpg";
+// import Event from "../../Assets/images/Event.jpeg";
+// import Documentation from "../../Assets/images/Documentation.webp";
+// import Whitepaper from "../../Assets/images/Whitepaper.jpg";
+import demoVideo from "../../Assets/images/demoVideoResource.jpg";
 import { Link } from "react-router-dom";
 
 const ResourceSection = () => {
@@ -12,7 +13,7 @@ const ResourceSection = () => {
     <div className={styles.resourcesSection}>
       <h1 className={styles.resourcesHeading}>Resources</h1>
       <div className={styles.resources}>
-        <div className={styles.rows}>
+        {/* <div className={styles.rows}>
           <Link to="/blog" className={styles.resourceCard}>
             <div
               className={styles.resourceCardImg}
@@ -46,6 +47,23 @@ const ResourceSection = () => {
             >
               <h1>Events</h1>
             </div>
+          </Link>
+        </div> */}
+
+        <div className={styles.singleRow}>
+          <Link to="/blog" className={styles.resourceCard}>
+            <div
+              className={styles.resourceCardImg}
+              style={{ backgroundImage: `url(${blogImg})` }}
+            ></div>
+            <h1>Blogs</h1>
+          </Link>
+          <Link to="/videos" className={styles.resourceCard}>
+            <div
+              className={styles.resourceCardImg}
+              style={{ backgroundImage: `url(${demoVideo})` }}
+            ></div>
+            <h1>Demo Videos</h1>
           </Link>
         </div>
       </div>

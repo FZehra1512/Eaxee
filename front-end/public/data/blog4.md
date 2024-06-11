@@ -1,4 +1,4 @@
-![Why an Organization Needs an EA Tool? Image 1](/Assets/blogImages/blog4Img1.png)
+![Why an Organization Needs an EA Tool? Image 1](/Assets/blogImages/blog4Img1.jpg)
 
 Organizations, especially smaller to mid-sized, often come across a question whether to invest in an EA tool or not while they already have access to various drawing tools and spreadsheet software. Hence, justifying the case internally for why a proper EA tool is necessary remains a challenge. In the following, six reasons are provided that should help prepare a compelling case for getting the CEO sign-off on the purchase of a specialized EA tool.
 

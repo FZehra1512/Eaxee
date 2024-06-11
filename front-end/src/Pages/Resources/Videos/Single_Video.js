@@ -1,12 +1,12 @@
 import React from 'react';
 import '../Videos/Video.css';
 
-const Single_Video = ({ source, para }) => {
+const SingleVideo = ({ source, para }) => {
     return (
         <div className='video'>
             <iframe
                 width="390"
-                height="250"
+                height="215"
                 src={source}
                 title="YouTube video player"
                 frameBorder="0"
@@ -19,4 +19,4 @@ const Single_Video = ({ source, para }) => {
     );
 }
 
-export default Single_Video;
+export default SingleVideo;

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logoImage from "../../Assets/eaxee x blue.png";
+import logoImage from "../../Assets/eaxeeLogo.png";
 import { NavLink } from "react-router-dom";
 import demostyles from "./requestDemo.module.css";
 import { useForm } from "react-hook-form";
@@ -83,7 +83,7 @@ const RequestDemo = () => {
       <div className={demostyles.logoContainer}>
         <NavLink to="/" className={demostyles.logo}>
           <img src={logoImage} alt="Logo" className={demostyles.logoImage} />
-          <p className={demostyles.logoText}>eaxee</p>
+          {/* <p className={demostyles.logoText}>eaxee</p> */}
         </NavLink>
       </div>
 

@@ -3,26 +3,18 @@ import '../Blogs/blogs.css';
 import blogs from './blogObject';
 import { Link } from 'react-router-dom';
 
+
+
 const Blog = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredBlogs, setFilteredBlogs] = useState([]);
 
-  // Function to get random unique indices
-  const getRandomIndices = (total, count) => {
-    const indices = new Set();
-    while (indices.size < count) {
-      indices.add(Math.floor(Math.random() * total));
-    }
-    return Array.from(indices);
+  const sortByDate = (blogs) => {
+    return blogs.sort((a, b) => new Date(b.date) - new Date(a.date));
   };
-
-  // Get three random indices
-  const randomIndices = getRandomIndices(blogs.length, 3);
-
-  // Separate selected and remaining blogs
-  const selectedBlogs = randomIndices.map(index => blogs[index]);
-  const selectedBlogIds = new Set(selectedBlogs.map(blog => blog.id));
-  const remainingBlogs = blogs.filter(blog => !selectedBlogIds.has(blog.id));
+  const sortedBlogs = sortByDate([...blogs]);
+  const topLatestBlogs = sortedBlogs.slice(0, 3);
+  const remainingBlogs = sortedBlogs.slice(3);
 
   // Handle search input change
   const handleInputChange = (event) => {
@@ -55,7 +47,7 @@ const Blog = () => {
         </div>
         <div className="search-bar">
           <div className="search-bar-text">
-            <h2>Explore Our Blog – Insights and Ideas Await!</h2>
+            {/* <h3>Explore Our Blog – Insights and Ideas Await!</h3> */}
           </div>
           <div className="search-bar-input">
             <input
@@ -91,40 +83,40 @@ const Blog = () => {
         <>
           <div className="blog-hero">
             <div className="box-1">
-              <Link to={`/blog/${selectedBlogs[0].id}`} className="box-1-card">
+              <Link to={`/blog/${topLatestBlogs[0].id}`} className="box-1-card">
                 <img
                   alt=""
                   className="box-1-card-img"
-                  src={selectedBlogs[0].image}
+                  src={topLatestBlogs[0].image}
                 />
                 <div className="box-1-card-text">
-                  <h2>{selectedBlogs[0].title}</h2>
-                  <p>{selectedBlogs[0].description}</p>
+                  <h2>{topLatestBlogs[0].title}</h2>
+                  <p>{topLatestBlogs[0].description}</p>
                 </div>
               </Link>
             </div>
 
             <div className="box-2">
-              <Link to={`/blog/${selectedBlogs[1].id}`} className="box-2-card">
+              <Link to={`/blog/${topLatestBlogs[1].id}`} className="box-2-card">
                 <img
                   alt=""
                   className="box-2-card-img"
-                  src={selectedBlogs[1].image}
+                  src={topLatestBlogs[1].image}
                 />
-                <div className="box-2-card-text">
-                  <h2>{selectedBlogs[1].title}</h2>
-                  <p>{selectedBlogs[1].description}</p>
+                <div className="box-2-card-text"> 
+                  <h2>{topLatestBlogs[1].title}</h2>
+                  <p>{topLatestBlogs[1].description.slice(0, 100) + "..."}</p>
                 </div>
               </Link>
-              <Link to={`/blog/${selectedBlogs[2].id}`} className="box-2-card">
+              <Link to={`/blog/${topLatestBlogs[2].id}`} className="box-2-card">
                 <img
                   alt=""
                   className="box-2-card-img"
-                  src={selectedBlogs[2].image}
+                  src={topLatestBlogs[2].image}
                 />
                 <div className="box-2-card-text">
-                  <h2>{selectedBlogs[2].title}</h2>
-                  <p>{selectedBlogs[2].description}</p>
+                  <h2>{topLatestBlogs[2].title}</h2>
+                  <p>{topLatestBlogs[2].description.slice(0, 100) + " ..."}</p>
                 </div>
               </Link>
             </div>

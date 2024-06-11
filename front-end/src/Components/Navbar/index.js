@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import './navbar.css';
-import logoImage from '../../Assets/eaxee x blue.png';
+import logoImage from '../../Assets/eaxeeLogo.png';
 import { IoMenu, IoClose } from "react-icons/io5";
 import { useMediaQuery } from "react-responsive";
 
@@ -42,23 +42,13 @@ const Navbar = () => {
               About Us
             </NavLink>
           </li>
-        {/* comment for temporary purpose, when other resources will be ready this option will continue to show */}
-          {/* <li className={liClassName}>
+          <li className={liClassName}>
             <NavLink
               to="/#resourceSection"
               className={linkClassName}
               onClick={closeMobileMenu}
             >
               Resources
-            </NavLink>
-          </li> */}
-          <li className={liClassName}>
-            <NavLink
-              to="/blog"
-              className={linkClassName}
-              onClick={closeMobileMenu}
-            >
-              Blogs
             </NavLink>
           </li>
           <li className={liClassName}>
@@ -87,7 +77,7 @@ const Navbar = () => {
       <nav className="navbar">
         <NavLink to="/" className="logoContainer">
           <img src={logoImage} alt="Logo" className="logo" />
-          <p className="logoName">eaxee</p>
+          {/* <p className="logoName">eaxee</p> */}
         </NavLink>
 
         {isMobile && (

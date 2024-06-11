@@ -2,7 +2,6 @@ import React, { useRef, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import styles from "./home.module.css";
-import animation from "../../Assets/eaxee organization.jpg";
 import Features from "../../Components/Features";
 import MainTools from "../../Components/MainTools";
 import animationvideo1 from "../../Assets/videos/animation_1.mkv"
@@ -57,12 +56,6 @@ const Home = () => {
             </p>
           </div>
 
-          <Link to="/requestDemo" style={{ color: "#fff" }}>
-            <button className="button" id={styles.homeButton}>
-              Request a Demo
-            </button>
-          </Link>
-
           <video
             src={selectedVideo}
             alt="Animation"
@@ -85,10 +78,21 @@ const Home = () => {
         <MainTools />
       </section>
 
+      <div className={styles.demoContainer}>
+        <h1>
+          Unlock the future of seamless digital transformation – Click 'Request Demo'
+          now.
+        </h1>
+        <Link to="/requestDemo" style={{ color: "#fff" }}>
+          <button className="button" id={styles.homeButton}>
+            Request a Demo
+          </button>
+        </Link>
+      </div>
+
       {/* Resources */}
       <section ref={resourceRef} id="resourceSection">
-        {/* comment for temporary purpose, when other resources will be ready this section will continue to show */}
-        {/* <ResourceSection /> */}
+        <ResourceSection />
       </section>
     </>
   );

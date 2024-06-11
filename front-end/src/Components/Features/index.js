@@ -53,6 +53,7 @@ const Features = () => {
           organization.{" "}
         </p>
       </div>
+      <div className={styles.whyeaxee}>
       <div className={styles.featuresBannerHeading}>
         <h1>Why Eaxee?</h1>
       </div>
@@ -64,6 +65,7 @@ const Features = () => {
             description={feature.description}
           />
         ))}
+      </div>
       </div>
     </div>
   );

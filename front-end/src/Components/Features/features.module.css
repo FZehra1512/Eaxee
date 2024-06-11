@@ -2,7 +2,7 @@
 
 .featuresBanner {
     width: 100%;
-    background-color: #EBF2FF;
+    /* background-color: #EBF2FF; */
     padding: 75px 0px;
     box-sizing: border-box;
     display: flex;
@@ -54,6 +54,11 @@
     line-height: 24px;
 }
 
+
+.whyeaxee{
+    background-color: #EBF2FF;
+    padding: 3rem 0;
+}
 
 /* Tablet + Mobiles */
 @media screen and (max-width: 1023px) {

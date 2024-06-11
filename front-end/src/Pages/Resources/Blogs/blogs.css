@@ -1,12 +1,12 @@
 .hero-section {
     /* border: 1px solid red; */
-    padding: 5rem;
+    padding: 5rem 8% 3rem; 
     text-align: center;
     color: #2764b0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 4rem;
+    gap: 2rem;
     margin-top: 4rem;
 }
 
@@ -14,15 +14,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
 }
 
 .hero-text h1 {
-    font-size: 48px;
+    font-size: 3rem;
     text-align: center;
-    color: #222F4B;
-    text-transform: uppercase;
-    font-weight: 800;
+    color: #2F4682;
+    font-weight: 700;
 }
 
 hr {
@@ -48,7 +47,7 @@ hr {
     outline: none;
     padding: 15px;
     background-color: rgb(236, 234, 234);
-    width: 70%;
+    width: 50%;
     border: none;
 }
 
@@ -286,7 +285,7 @@ hr {
 
 @media screen and (max-width: 751px) {
     .hero-text h1 {
-        font-size: 34px;
+        font-size: 2.375rem;
     }
 
     .blog-hero h2 {
@@ -303,6 +302,9 @@ hr {
 
     .blog-container p {
         font-size: 14px;
+    }
+    .search-bar-input input {
+        width: 100%;
     }
 }
 
@@ -321,18 +323,10 @@ hr {
     .hero-section {
         width: 100%;
         align-items: center;
-        padding: 0;
-        margin-top: 7rem;
     }
 
     .blog-container {
         flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 350px) {
-    .search-bar-input input {
-        width: 60%;
     }
 }
 
@@ -343,11 +337,6 @@ hr {
 
     .box-2-card-img,
     .box-2-card-text {
-        width: 100%;
-    }
-
-    .search-bar-input input {
-        border-radius: 5px 5px 5px 5px;
         width: 100%;
     }
 
