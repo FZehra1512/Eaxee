@@ -12,7 +12,7 @@
     font-weight: 700;
     line-height: 65px;
     text-align: center;
-    color: #222F4B;
+    color: #393a3a;
 }
 
 .description h1 {
@@ -24,7 +24,7 @@
 }
 
 .description p span {
-    color: #2764b0;
+    color: #393a3a;
 }
 
 
@@ -32,7 +32,7 @@
     margin-top: 3rem;
     height: 300px;
     width: 100%;
-    background-color: #EBF2FF;
+    background-color: #cecece36;
     padding: 0 8%;
     display: flex;
     flex-direction: column;
@@ -42,12 +42,13 @@
 .demoContainer h1 {
     font-size: 1.75rem;
     font-weight: 600;
-    color: #222F4B;
+    color: #393a3a;
     text-align: center;
 }
 
 #homeButton {
     margin-top: 46px;
+    background-color: #2158A4;
 }
 
 .animation {

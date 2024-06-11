@@ -9,7 +9,7 @@
 }
 
 .contactPageHeadings {
-    color: #2F4682;
+    color: #2158A4;
     line-height: 60px;
     font-size: 3rem;
     font-weight: 700;
@@ -38,17 +38,17 @@
 .inputField label {
     font-size: 1.125rem;
     font-weight: 600;
-    color: #1D254F;
+    color: #393a3a;
 }
 
 .inputField input,
 textarea {
     outline: none;
-    border: 1px solid #2f4680;
+    border: 1px solid #cecece;
     padding: 0.8em 0.6em;
     width: 100%;
     font-size: 1rem;
-    color: #2F4682;
+    color: #393a3a;
     box-sizing: border-box;
 }
 
@@ -60,14 +60,14 @@ textarea:-webkit-autofill {
 
 .inputField input:focus,
 .inputField textarea:focus {
-    box-shadow: 0px 0px 5px 1px #2f4680;
-    -webkit-box-shadow: 0px 0px 5px 1px #2f4680;
-    -moz-box-shadow: 0px 0px 5px 1px #2f4680;
+    box-shadow: 0px 0px 5px 1px #2158A4;
+    -webkit-box-shadow: 0px 0px 5px 1px #2158A4;
+    -moz-box-shadow: 0px 0px 5px 1px #2158A4;
 }
 
 .errorMessage {
     font-size: 1rem;
-    color: #2F4682;
+    color:#2158A4;
     text-align: left;
 }
 

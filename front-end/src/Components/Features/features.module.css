@@ -12,11 +12,11 @@
 
 .featuresBannerHeading {
     text-align: center;
-    color: #2F4682;
     padding: 0 6%;
 }
 
 .featuresBannerHeading h1 {
+    color: #2158A4;
     font-size: 3rem;
     font-weight: 700;
 }
@@ -25,6 +25,7 @@
     font-size: 1.25rem;
     font-weight: 400;
     margin: 18px 0 40px;
+    color: #393a3a;
 }
 
 .features {
@@ -43,23 +44,25 @@
     font-size: 1.75rem;
     font-weight: 700;
     text-align: left;
-    color: #2F4682;
+    color: #2158A4;
 }
 
 .featureDescription ul li {
     list-style-type: disc;
     font-size: 1.125rem;
-    color: #1D254F;
+    color: #393a3a;
     padding-top: 30px;
     line-height: 24px;
 }
 
 
-.whyeaxee{
-    background-color: #EBF2FF;
+.whyeaxee {
+    background-color: #cecece36;
     padding: 3rem 0;
 }
-
+.whyeaxee h1{
+    color: #393a3a;
+}
 /* Tablet + Mobiles */
 @media screen and (max-width: 1023px) {
     .features {

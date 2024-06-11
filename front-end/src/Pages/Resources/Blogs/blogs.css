@@ -20,7 +20,7 @@
 .hero-text h1 {
     font-size: 3rem;
     text-align: center;
-    color: #2F4682;
+    color: #2158A4;
     font-weight: 700;
 }
 
@@ -99,6 +99,7 @@ hr {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 15px;
+    color: #393a3a;
 }
 
 
@@ -138,6 +139,7 @@ hr {
     gap: 10px;
     width: 50%;
     transition: transform 0.3s ease, color 0.3s ease;
+    color: #393a3a;
 }
 
 .box-2-card:hover .box-2-card-text {
@@ -176,7 +178,7 @@ hr {
 
 .heading {
     text-transform: uppercase;
-    color: #2764b0;
+    color: #2158A4;
 }
 
 .blog-container {
@@ -225,6 +227,7 @@ hr {
     gap: 1rem;
     transition: transform 0.3s ease, color 0.3s ease;
     width: 100%;
+    color: #393a3a;
 }
 
 .blog-container-card:hover .card-text {

@@ -11,7 +11,7 @@
 
 .demo-videos h3 {
     text-align: center;
-    color: #2F4682;
+    color: #2158A4;
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 2.75rem;
@@ -28,11 +28,11 @@
     flex-direction: column;
     margin-top: 1rem;
     border-radius: 10px;
-    border: 1px solid #222f4b3f;
+    border: 1px solid #cecece;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: white;
+    background-color: #cecece09;
 }
 
 .video iframe {
@@ -40,7 +40,7 @@
 }
 
 .video p {
-    color: #222F4B;
+    color: #393a3a;
     padding: 1.5rem 1rem;
     font-weight: 600;
     font-size: 1.125rem;

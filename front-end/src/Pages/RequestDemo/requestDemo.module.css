@@ -27,7 +27,7 @@
 }
 
 .logoText {
-    color: #000;
+    color: #393a3a;
     font-size: 1.625rem;
     font-weight: 700;
     line-height: 19px;
@@ -42,7 +42,7 @@
 }
 
 .coloredContainer {
-    background-color: #EBF2FF;
+    background-color: #cecece36;;
     width: 100%;
     margin-bottom: 30px;
 }
@@ -56,14 +56,14 @@
     font-size: 2.25rem;
     line-height: 54px;
     font-weight: 700;
-    color: #1D254F;
+    color: #393a3a;
 }
 
 .infoCard p {
     margin-top: 30px;
     font-size: 1.25rem;
     line-height: 32px;
-    color: #2F4682;
+    color: #2158A4;
 }
 
 .demoFormContainer {
@@ -71,7 +71,7 @@
 }
 
 .demoPageHeadings {
-    color: #2F4682;
+    color: #2158A4;
     font-size: 2.25rem;
     font-weight: 700;
 }

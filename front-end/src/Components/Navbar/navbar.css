@@ -27,10 +27,11 @@
 .logo {
   height: 30px;
   width: 140.5px;
+
 }
 
 .logoName {
-  color: #222F4B;
+  /* color: #222F4B; */
   font-size: 24px;
   font-weight: 700;
   line-height: 19px;
@@ -79,7 +80,7 @@
 }
 
 .nav__link {
-  color: #222F4B;
+  color: #393a3a;
   font-size: 18px;
   font-weight: 500;
   line-height: 19px;
