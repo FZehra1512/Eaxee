@@ -14,7 +14,7 @@ const SingleVideo = ({ source, para }) => {
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
             ></iframe>
-            <p>{para}</p>
+            <p className='para'>{para}</p>
         </div>
     );
 }

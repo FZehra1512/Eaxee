@@ -45,16 +45,16 @@ const BlogPage = () => {
   return (
     <div className={styles.blogContainer}>
       <div className={styles.blogPost}>
-        <h1>{blog.title}</h1>
+        <h1 className="heading">{blog.title}</h1>
 
         <div className={styles.publication}>
           <div>
             <IoIosTime />
-            <p>{blog.date}</p>
+            <p className="para">{blog.date}</p>
           </div>
           <div>
             <IoMdPerson />
-            <p>{blog.author}</p>
+            <p className="para">{blog.author}</p>
           </div>
         </div>
 
@@ -85,20 +85,20 @@ const BlogPage = () => {
         </div>
 
         <div className={styles.blogContent}>
-          <ReactMarkdown className={styles.markdown}>{content}</ReactMarkdown>
+          <ReactMarkdown className={`${styles.markdown} para`}>{content}</ReactMarkdown>
         </div>
 
         <div className={styles.prevNextButtons}>
           {previousBlogId ? (
             <Link to={`/blog/${previousBlogId}`}>
-              <button className="button">Previous Blog</button>
+              <button className="button para">Previous Blog</button>
             </Link>
           ) : (
             ""
           )}
           {nextBlogId ? (
             <Link to={`/blog/${nextBlogId}`}>
-              <button className="button">Next Blog</button>
+              <button className="button para">Next Blog</button>
             </Link>
           ) : (
             ""

@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import styles from "./home.module.css";
+import '../../../../front-end/src/App.css';
 import Features from "../../Components/Features";
 import MainTools from "../../Components/MainTools";
 import animationvideo1 from "../../Assets/videos/animation_1.mkv"
@@ -49,9 +50,9 @@ const Home = () => {
       {/* Description Banner with Button */}
       <section ref={homeRef} id="Home">
         <div className={styles.banner}>
-          <div className={styles.description}>
-            <h1>Eaxee Enterprise Architecture</h1>
-            <p>
+          <div className={`${styles.description} `}>
+            <h1 className="subHeading">Eaxee Enterprise Architecture</h1>
+            <p className="para">
               Visualize, Analyze, Optimize<span>.</span>
             </p>
           </div>
@@ -79,12 +80,12 @@ const Home = () => {
       </section>
 
       <div className={styles.demoContainer}>
-        <h1>
+        <h1 className="subHeading">
           Unlock the future of seamless digital transformation – Click 'Request Demo'
           now.
         </h1>
         <Link to="/requestDemo" style={{ color: "#fff" }}>
-          <button className="button" id={styles.homeButton}>
+          <button className="button para" id={styles.homeButton}>
             Request a Demo
           </button>
         </Link>

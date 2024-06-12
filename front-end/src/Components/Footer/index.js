@@ -21,31 +21,31 @@ const Footer = () => {
   return (
     <footer className={styles.footerContainer}>
       <div className={styles.websiteLinks}>
-        <Link to="/#Home" className={styles.weblink}>
+        <Link to="/#Home" className={`${styles.weblink} para`}>
           Home
         </Link>
-        <Link to="/#about" className={styles.weblink}>
+        <Link to="/#about" className={`${styles.weblink} para`}>
           About Us
         </Link>
-        <Link to="/contact" className={styles.weblink}>
+        <Link to="/contact" className={`${styles.weblink} para`}>
           Contact
         </Link>
-        <Link to="/requestDemo" className={styles.weblink}>
+        <Link to="/requestDemo" className={`${styles.weblink} para`}>
           Request Demo
         </Link>
 
         <div className={styles.resourcesLinks}>
-          <button onClick={toggleDropdown} className={styles.dropdownButton}>
+          <button onClick={toggleDropdown} className={`${styles.dropdownButton} para`}>
             Resources{" "}
             <IoMdArrowDropdown className={styles.dropdownButtonIcon} />
           </button>
           <div
             className={`${styles.dropdownContent} ${isOpen ? styles.show : ""}`}
           >
-            <Link to="/blog" className={styles.weblink}>
+            <Link to="/blog" className={`${styles.weblink} para`}>
               - Blogs
             </Link>
-            <Link to="/videos" className={styles.weblink}>
+            <Link to="/videos" className={`${styles.weblink} para`}>
               - Demo Videos
             </Link>
             {/* <Link to="/whitepaper" className={styles.weblink}>
@@ -62,7 +62,7 @@ const Footer = () => {
       </div>
 
       <div className={styles.footer}>
-        <p>©{currentYear} Eaxee | All rights reserved</p>
+        <p className='para'>©{currentYear} Eaxee | All rights reserved</p>
         <div className={styles.socialLinks}>
           <a
             onClick={openMail}

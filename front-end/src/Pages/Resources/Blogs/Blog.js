@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../Blogs/blogs.css';
+// import '../../../App.css'
 import blogs from './blogObject';
 import { Link } from 'react-router-dom';
 
@@ -41,7 +42,7 @@ const Blog = () => {
       <div className="hero-section">
         <div>
           <div className="hero-text">
-            <h1>Resource - Blog</h1>
+            <h1 className='subHeading'>Resource - Blog</h1>
           </div>
           <hr />
         </div>
@@ -70,13 +71,13 @@ const Blog = () => {
               >
                 <img alt="" src={blog.image} />
                 <div className="card-text">
-                  <h2>{blog.title}</h2>
-                  <p>{blog.description}</p>
+                  <h2 className='subHeading'>{blog.title}</h2>
+                  <p className='para'>{blog.description}</p>
                 </div>
               </Link>
             ))
           ) : (
-            <p>No blogs found!</p>
+            <p className='para'>No blogs found!</p>
           )}
         </div>
       ) : (
@@ -90,8 +91,8 @@ const Blog = () => {
                   src={topLatestBlogs[0].image}
                 />
                 <div className="box-1-card-text">
-                  <h2>{topLatestBlogs[0].title}</h2>
-                  <p>{topLatestBlogs[0].description}</p>
+                  <h2 className='subHeading'>{topLatestBlogs[0].title}</h2>
+                  <p className='para'>{topLatestBlogs[0].description}</p>
                 </div>
               </Link>
             </div>
@@ -104,8 +105,8 @@ const Blog = () => {
                   src={topLatestBlogs[1].image}
                 />
                 <div className="box-2-card-text"> 
-                  <h2>{topLatestBlogs[1].title}</h2>
-                  <p>{topLatestBlogs[1].description.slice(0, 100) + "..."}</p>
+                  <h2 className='subHeading'>{topLatestBlogs[1].title}</h2>
+                  <p className='para'>{topLatestBlogs[1].description.slice(0, 100) + "..."}</p>
                 </div>
               </Link>
               <Link to={`/blog/${topLatestBlogs[2].id}`} className="box-2-card">
@@ -115,8 +116,8 @@ const Blog = () => {
                   src={topLatestBlogs[2].image}
                 />
                 <div className="box-2-card-text">
-                  <h2>{topLatestBlogs[2].title}</h2>
-                  <p>{topLatestBlogs[2].description.slice(0, 100) + " ..."}</p>
+                  <h2 className='subHeading'>{topLatestBlogs[2].title}</h2>
+                  <p className='para'>{topLatestBlogs[2].description.slice(0, 100) + " ..."}</p>
                 </div>
               </Link>
             </div>
@@ -133,8 +134,8 @@ const Blog = () => {
                 >
                   <img alt="" src={blog.image} />
                   <div className="card-text">
-                    <h2>{blog.title}</h2>
-                    <p>{blog.description}</p>
+                    <h2 className='subHeading'>{blog.title}</h2>
+                    <p className='para'>{blog.description}</p>
                   </div>
                 </Link>
               ))}

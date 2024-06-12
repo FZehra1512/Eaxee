@@ -78,7 +78,7 @@ const Contact = () => {
 
       {/* Contact form */}
       <div className={styles.contactContainer}>
-        <h1 className={styles.contactPageHeadings}>Contact Us</h1>
+        <h1 className={`${styles.contactPageHeadings} subHeading`}>Contact Us</h1>
         <form
           className={styles.contactForm}
           id="contact-form"
@@ -90,7 +90,7 @@ const Contact = () => {
 
           <div className={styles.formRow}>
             <div className={styles.inputField}>
-              <label htmlFor="fullName">Name</label>
+              <label htmlFor="fullName" className='para'>Name</label>
               <input
                 type="text"
                 name="fullName"
@@ -111,7 +111,7 @@ const Contact = () => {
               )}
             </div>
             <div className={styles.inputField}>
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email" className='para'>Email</label>
               <input
                 type="email"
                 name="email"
@@ -132,7 +132,7 @@ const Contact = () => {
 
           {/* Form Row 2 */}
           <div className={styles.inputField}>
-            <label htmlFor="subject">Subject</label>
+            <label htmlFor="subject" className='para'>Subject</label>
             <input
               type="text"
               name="subject"
@@ -152,7 +152,7 @@ const Contact = () => {
 
           {/* Form Row 3 */}
           <div className={styles.inputField}>
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message" className='para'>Message</label>
             <textarea
               rows={5}
               name="message"
@@ -181,7 +181,7 @@ const Contact = () => {
 
           <button
             type="submit"
-            className="button"
+            className="button para"
             id={styles.submitButton}
             disabled={disabled}
           >

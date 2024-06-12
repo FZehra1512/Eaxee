@@ -1,3 +1,26 @@
+@font-face {
+  font-family: 'heading';
+  src: url('../src//fonts/Futura\ Bold\ font.ttf')
+}
+@font-face {
+  font-family: 'subHeading';
+  src: url('../src/fonts/futura\ medium\ bt.ttf')
+}
+@font-face {
+  font-family: 'para';
+  src: url('../src/fonts/Lato-Regular.ttf')
+}
+
+.heading{
+  font-family: heading;
+}
+.subHeading{
+  font-family: subHeading;
+}
+.para{
+  font-family: para;
+}
+
 html,
 body {
   height: 100%;

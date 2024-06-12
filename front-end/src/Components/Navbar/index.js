@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import './navbar.css';
+import '../../../../front-end/src/App.css';
 import logoImage from '../../Assets/eaxeeLogo.png';
 import { IoMenu, IoClose } from "react-icons/io5";
 import { useMediaQuery } from "react-responsive";
+
 
 
 const Navbar = () => {
@@ -22,14 +24,14 @@ const Navbar = () => {
 
   const renderNavLinks = () => {
     const listClassName = isMobile ? "nav__list" : "nav__list__web";
-    const linkClassName = "nav__link";
+    const linkClassName = "nav__link para";
     const liClassName = isMobile ? "mobileNavLinks" : "";
     return (
 
       <div className={listClassName}>
         <ul>
           <li className={liClassName}>
-            <NavLink to="/#Home" className={linkClassName} onClick={closeMobileMenu}>
+            <NavLink to="/#Home" className={linkClassName } onClick={closeMobileMenu}>
               Home
             </NavLink>
           </li>
@@ -66,7 +68,7 @@ const Navbar = () => {
           style={{ color: "#fff" }}
           id="mobileNavButton"
         >
-          <button className="button">Request a Demo</button>
+          <button className="button para">Request a Demo</button>
         </NavLink>
       </div>
     );
@@ -102,7 +104,7 @@ const Navbar = () => {
 
         {/* Button for devices other than mobile*/}
         <NavLink to="/requestDemo" style={{ color: "#fff" }} id="navButton">
-          <button className="button">Request a Demo</button>
+          <button className="button para">Request a Demo</button>
         </NavLink>
 
       </nav>

@@ -4,7 +4,7 @@ import styles from "./error.module.css";
 const Error = ({text}) => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.error}>Error : {text}</h1>
+      <h1 className={`${styles.error} heading`}>Error : {text}</h1>
     </div>
   );
 };

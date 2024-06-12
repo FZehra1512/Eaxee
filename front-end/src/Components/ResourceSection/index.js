@@ -11,7 +11,7 @@ const ResourceSection = () => {
 
   return (
     <div className={styles.resourcesSection}>
-      <h1 className={styles.resourcesHeading}>Resources</h1>
+      <h1 className={`${styles.resourcesHeading} subHeading`}>Resources</h1>
       <div className={styles.resources}>
         {/* <div className={styles.rows}>
           <Link to="/blog" className={styles.resourceCard}>
@@ -56,14 +56,14 @@ const ResourceSection = () => {
               className={styles.resourceCardImg}
               style={{ backgroundImage: `url(${blogImg})` }}
             ></div>
-            <h1>Blogs</h1>
+            <h1 className='heading'>Blogs</h1>
           </Link>
-          <Link to="/videos" className={styles.resourceCard}>
+          <Link  to="/videos" className={styles.resourceCard}>
             <div
               className={styles.resourceCardImg}
-              style={{ backgroundImage: `url(${demoVideo})` }}
+              style={{ backgroundImage: `url(${demoVideo})`}}
             ></div>
-            <h1>Demo Videos</h1>
+            <h1 className='heading'>Demo Videos</h1>
           </Link>
         </div>
       </div>
