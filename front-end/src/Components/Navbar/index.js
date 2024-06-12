@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import './navbar.css';
-import '../../../../front-end/src/App.css';
+// import '../../../../front-end/src/App.css';
 import logoImage from '../../Assets/eaxeeLogo.png';
 import { IoMenu, IoClose } from "react-icons/io5";
 import { useMediaQuery } from "react-responsive";

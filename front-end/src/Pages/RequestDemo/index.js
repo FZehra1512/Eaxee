@@ -91,11 +91,11 @@ const RequestDemo = () => {
       <div className={demostyles.mainContainer}>
         <div className={demostyles.coloredContainer}>
           <div className={demostyles.infoCard}>
-            <h1>
+            <h1 className="mainHeading">
               Unlock the Potential of your Enterprise Architecture: Request a
               Demo Today!
             </h1>
-            <p>
+            <p className="para">
               Explore the future of your enterprise with our cutting-edge
               architecture solutions. From scalability to security, let us
               demonstrate how our tailored approach can elevate your business to
@@ -107,7 +107,7 @@ const RequestDemo = () => {
 
         {/* Request Demo form */}
         <div className={demostyles.demoFormContainer}>
-          <h1 className={demostyles.demoPageHeadings}>Request Demo</h1>
+          <h1 className={`${demostyles.demoPageHeadings} mainHeading`}>Request Demo</h1>
           <form
             className={styles.contactForm}
             id="contact-form"
@@ -119,7 +119,7 @@ const RequestDemo = () => {
 
             <div className={styles.formRow}>
               <div className={styles.inputField}>
-                <label htmlFor="fullName">Name</label>
+                <label htmlFor="fullName" className="para">Name</label>
                 <input
                   type="text"
                   name="fullName"
@@ -142,7 +142,7 @@ const RequestDemo = () => {
                 )}
               </div>
               <div className={styles.inputField}>
-                <label htmlFor="email">Business Email</label>
+                <label htmlFor="email" className="para">Business Email</label>
                 <input
                   type="email"
                   name="email"
@@ -165,7 +165,7 @@ const RequestDemo = () => {
 
             <div className={styles.formRow}>
               <div className={styles.inputField}>
-                <label htmlFor="phone">Phone</label>
+                <label htmlFor="phone" className="para">Phone</label>
                 <input
                   type="tel"
                   name="phone"
@@ -182,7 +182,7 @@ const RequestDemo = () => {
                 )}
               </div>
               <div className={styles.inputField}>
-                <label htmlFor="jobTitle">Job Title/Role</label>
+                <label htmlFor="jobTitle" className="para">Job Title/Role</label>
                 <input
                   type="text"
                   name="jobTitle"
@@ -201,7 +201,7 @@ const RequestDemo = () => {
 
             {/* Form Row 3 */}
             <div className={styles.inputField}>
-              <label htmlFor="company">Company Name</label>
+              <label htmlFor="company" className="para">Company Name</label>
               <input
                 type="text"
                 name="company"
@@ -218,7 +218,7 @@ const RequestDemo = () => {
             </div>
 
             {/* Honeypot for spam detection */}
-            <label htmlFor="honeypot" style={{ display: "none" }}>
+            <label className="para" htmlFor="honeypot" style={{ display: "none" }}>
               Enter First Name:
             </label>
             <input
@@ -231,7 +231,7 @@ const RequestDemo = () => {
 
             <button
               type="submit"
-              className="button"
+              className="button para"
               id={demostyles.submitButton}
               // disabled={disabled}
             >

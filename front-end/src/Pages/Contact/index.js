@@ -78,7 +78,7 @@ const Contact = () => {
 
       {/* Contact form */}
       <div className={styles.contactContainer}>
-        <h1 className={`${styles.contactPageHeadings} subHeading`}>Contact Us</h1>
+        <h1 className={`${styles.contactPageHeadings} mainHeading`}>Contact Us</h1>
         <form
           className={styles.contactForm}
           id="contact-form"

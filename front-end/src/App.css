@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'heading';
-  src: url('../src//fonts/Futura\ Bold\ font.ttf')
+  font-family: 'mainHeading';
+  src: url('../src//fonts/unicode.futurab.ttf')
 }
 @font-face {
   font-family: 'subHeading';
@@ -11,8 +11,8 @@
   src: url('../src/fonts/Lato-Regular.ttf')
 }
 
-.heading{
-  font-family: heading;
+.mainHeading{
+  font-family: mainHeading;
 }
 .subHeading{
   font-family: subHeading;

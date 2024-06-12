@@ -33,7 +33,7 @@ const Features = () => {
 
     const Feature = ({ heading, description }) => (
       <div className={styles.featureDescription}>
-        <h2 className='heading'>{heading}</h2>
+        <h2 className='subHeading'>{heading}</h2>
         <ul>
           {description.map((item, index) => (
             <li className='para' key={index}>{item}</li>
@@ -46,7 +46,7 @@ const Features = () => {
   return (
     <div className={styles.featuresBanner}>
       <div className={styles.featuresBannerHeading}>
-        <h1 className='subHeading '>What is Eaxee?</h1>
+        <h1 className='mainHeading '>What is Eaxee?</h1>
         <p className='para'>
           Eaxee is a highly configurable Enterprise Architecture Management
           web-based platform that provides intuitive capabilities and
@@ -57,7 +57,7 @@ const Features = () => {
       </div>
       <div className={styles.whyeaxee}>
       <div className={styles.featuresBannerHeading}>
-        <h1 className='subHeading'>Why Eaxee?</h1>
+        <h1 className='mainHeading'>Why Eaxee?</h1>
       </div>
       <div className={styles.features}>
         {featuresData.map((feature, index) => (

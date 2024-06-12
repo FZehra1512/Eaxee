@@ -51,7 +51,7 @@ const Home = () => {
       <section ref={homeRef} id="Home">
         <div className={styles.banner}>
           <div className={`${styles.description} `}>
-            <h1 className="subHeading">Eaxee Enterprise Architecture</h1>
+            <h1 className="mainHeading">Eaxee Enterprise Architecture</h1>
             <p className="para">
               Visualize, Analyze, Optimize<span>.</span>
             </p>
@@ -80,7 +80,7 @@ const Home = () => {
       </section>
 
       <div className={styles.demoContainer}>
-        <h1 className="subHeading">
+        <h1 className="mainHeading">
           Unlock the future of seamless digital transformation – Click 'Request Demo'
           now.
         </h1>

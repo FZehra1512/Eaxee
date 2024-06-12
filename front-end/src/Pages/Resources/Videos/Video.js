@@ -5,7 +5,7 @@ const Video = () => {
     return (
       <div className="video-container">
         <div className="demo-videos">
-          <h3 className='subHeading'>Demo Videos</h3>
+          <h3 className='mainHeading'>Demo Videos</h3>
           <div className="demo-videos-list">
             <SingleVideo
               source="https://www.youtube.com/embed/_v_Qk47faLM?si=IWn89zS2HPZmVTNO"

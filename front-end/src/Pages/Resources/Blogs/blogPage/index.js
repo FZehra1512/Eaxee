@@ -45,7 +45,7 @@ const BlogPage = () => {
   return (
     <div className={styles.blogContainer}>
       <div className={styles.blogPost}>
-        <h1 className="heading">{blog.title}</h1>
+        <h1 className="heading mainHeading">{blog.title}</h1>
 
         <div className={styles.publication}>
           <div>

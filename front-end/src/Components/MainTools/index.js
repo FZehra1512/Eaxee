@@ -11,7 +11,7 @@ import styles from './maintools.module.css'
 const MainTools = () => {
   return (
     <div className={styles.mainTools}>
-      <h1 className={`${styles.mainToolsHeading} subHeading`}>All the tools you need</h1>
+      <h1 className={`${styles.mainToolsHeading} mainHeading`}>All the tools you need</h1>
 
       {/* Tool 1 */}
       <div className={styles.toolDetails}>
