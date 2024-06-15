@@ -104,9 +104,10 @@ const Navbar = () => {
 
         {/* Button for devices other than mobile*/}
         <NavLink to="/requestDemo" style={{ color: "#fff" }} id="navButton">
-          <button className="button para">Request a Demo</button>
+          <button className="button para" style={{ padding: "14px 18px" }}>
+            Request a Demo
+          </button>
         </NavLink>
-
       </nav>
     </header>
   );

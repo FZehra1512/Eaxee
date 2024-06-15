@@ -14,8 +14,8 @@ const Blog = () => {
     return blogs.sort((a, b) => new Date(b.date) - new Date(a.date));
   };
   const sortedBlogs = sortByDate([...blogs]);
-  const topLatestBlogs = sortedBlogs.slice(0, 3);
-  const remainingBlogs = sortedBlogs.slice(3);
+  const topLatestBlogs = sortedBlogs.slice(0, 1);
+  const remainingBlogs = sortedBlogs.slice(1, 4);
 
   // Handle search input change
   const handleInputChange = (event) => {
@@ -61,7 +61,7 @@ const Blog = () => {
       </div>
 
       {showSearchResults ? (
-        <div className="blog-container m-5">
+        <div className="blog-container filtered">
           {filteredBlogs.length > 0 ? (
             filteredBlogs.map((blog, index) => (
               <Link
@@ -97,7 +97,7 @@ const Blog = () => {
               </Link>
             </div>
 
-            <div className="box-2">
+            {/* <div className="box-2">
               <Link to={`/blog/${topLatestBlogs[1].id}`} className="box-2-card">
                 <img
                   alt=""
@@ -120,7 +120,7 @@ const Blog = () => {
                   <p className='para'>{topLatestBlogs[2].description.slice(0, 100) + " ..."}</p>
                 </div>
               </Link>
-            </div>
+            </div> */}
           </div>
 
           <div className="blog-list">

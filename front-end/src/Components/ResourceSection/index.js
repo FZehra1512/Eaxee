@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './resourceSection.module.css'
-import blogImg from "../../Assets/blog.jpg";
+import blogImg from "../../Assets/blog.png";
 // import Event from "../../Assets/images/Event.jpeg";
 // import Documentation from "../../Assets/images/Documentation.webp";
 // import Whitepaper from "../../Assets/images/Whitepaper.jpg";
-import demoVideo from "../../Assets/images/demoVideoResource.jpg";
+import demoVideo from "../../Assets/demoVideoResource.png";
 import { Link } from "react-router-dom";
 
 const ResourceSection = () => {
@@ -54,14 +54,14 @@ const ResourceSection = () => {
           <Link to="/blog" className={styles.resourceCard}>
             <div
               className={styles.resourceCardImg}
-              style={{ backgroundImage: `url(${blogImg})`, backgroundSize:"contain", backgroundRepeat:"no-repeat"}}
+              style={{ backgroundImage: `url(${blogImg})`}}
             ></div>
             <h1 className='heading mainHeading'>Blogs</h1>
           </Link>
           <Link  to="/videos" className={styles.resourceCard}>
             <div
               className={styles.resourceCardImg}
-              style={{ backgroundImage: `url(${demoVideo})` , backgroundSize:"contain", backgroundRepeat:"no-repeat"}}
+              style={{ backgroundImage: `url(${demoVideo})`}}
             ></div>
             <h1 className='heading mainHeading'>Demo Videos</h1>
           </Link>

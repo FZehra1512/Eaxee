@@ -3,7 +3,7 @@
 .mainTools {
     display: flex;
     flex-direction: column;
-    padding: 5% 18% 0;
+    padding: 4% 18% 0;
     box-sizing: border-box
 }
 
@@ -20,7 +20,11 @@
     display: flex;
     justify-content: space-between;
     gap: 5%;
-    margin-top: 80px;
+    margin-top: 90px;
+}
+
+.toolDetails:first-of-type {
+    margin-top: 50px;
 }
 
 .reversed {
@@ -96,7 +100,7 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1300px) {
     .mainTools {
-        padding: 5% 10% 0%;
+        padding: 5% 6% 0%;
     }
     #tool1Img {
         width: 45%;
@@ -141,7 +145,7 @@
 
 @media screen and (max-width: 768px) {
     .mainTools {
-        padding: 8% 10% 0%;
+        padding: 0 8%;
     }
 
     .mainToolsHeading  {

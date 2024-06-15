@@ -1,6 +1,6 @@
 .hero-section {
     /* border: 1px solid red; */
-    padding: 5rem 8% 3rem; 
+    padding: 4rem 8% 3rem; 
     text-align: center;
     color: #2764b0;
     display: flex;
@@ -40,7 +40,7 @@ hr {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
 }
 
 .search-bar-input input {
@@ -65,22 +65,19 @@ hr {
 }
 
 .blog-hero {
-    /* border: 1px solid green; */
     display: flex;
     justify-content: space-around;
     height: 100%;
-    padding: 0 6% 6%;
+    padding: 0 8% 4%;
+    gap: 3rem;
 }
 
 .box-1-card {
-    /* border: 1px solid yellow; */
     overflow: hidden;
     border: 1px solid #222f4b3f;
-    padding: 1rem;
     display: flex;
     flex-direction: column;
-    margin: 1rem;
-    gap: 2rem;
+    gap: 1rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -90,7 +87,7 @@ hr {
 .box-1-card-img {
     width: 100%;
     object-fit: cover;
-    height: 20rem;
+    height: 15.5rem;
     /* border: 1px solid green; */
 }
 
@@ -98,7 +95,7 @@ hr {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-bottom: 15px;
+    margin: 0 1rem 1rem;
     color: #393a3a;
 }
 
@@ -106,9 +103,8 @@ hr {
 .box-2-card {
     overflow: hidden;
     display: flex;
-    margin: 1rem;
-    gap: 2rem;
-    padding: 1rem;
+    gap: 1rem;
+    margin-bottom: 3rem;
     border-radius: 10px;
     border: 1px solid #222f4b3f;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -123,8 +119,7 @@ hr {
 }
 
 .box-2-card-img {
-    width: 50%;
-    height: 10rem;
+    width: 45%;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
@@ -137,14 +132,10 @@ hr {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin: 1rem;
     width: 50%;
     transition: transform 0.3s ease, color 0.3s ease;
     color: #393a3a;
-}
-
-.box-2-card:hover .box-2-card-text {
-    transform: translateX(10px);
-    color: #333;
 }
 
 .box-2-card-text h2 {
@@ -159,12 +150,6 @@ hr {
     transition: color 0.3s ease;
 }
 
-.box-2-card:hover .box-2-card-text h2,
-.box-2-card:hover .box-2-card-text p {
-    color: #555;
-}
-
-
 .box-1,
 .box-2 {
     width: 50%;
@@ -172,8 +157,7 @@ hr {
 
 .blog-list {
     /* border: 1px solid red; */
-    padding: 0 6% 6%;
-    margin: 0 1rem 1rem;
+    padding: 0 8% 4%;
 }
 
 .heading {
@@ -187,6 +171,10 @@ hr {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3rem;
+}
+
+.filtered {
+    padding: 0 8%;
 }
 
 .blog-container-card {
@@ -220,8 +208,8 @@ hr {
 }
 
 .card-text {
-    margin-top: 1rem;
-    padding: 10px;
+    margin-top: 0.5rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -230,10 +218,6 @@ hr {
     color: #393a3a;
 }
 
-.blog-container-card:hover .card-text {
-    transform: translateY(-10px);
-    color: #333;
-}
 
 .card-text h2 {
     font-size: 1.5rem;
@@ -247,13 +231,19 @@ hr {
     transition: color 0.3s ease;
 }
 
-.blog-container-card:hover .card-text h2,
-.blog-container-card:hover .card-text p {
-    color: #555;
-}
 
 /* Media Queries */
-@media screen and (max-width: 1020px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .blog-hero {
+        padding: 0 16% 6%;
+    }
+
+    .search-bar-input input {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
     .blog-container {
         gap: 3rem;
     }
@@ -270,13 +260,6 @@ hr {
         width: 100%;
     }
 
-    .box-2-card {
-        margin-top: 4rem;
-    }
-}
-
-
-@media screen and (max-width: 872px) {
     .blog-container {
         grid-template-columns: 1fr 1fr;
     }
@@ -284,9 +267,11 @@ hr {
     .blog-container-card {
         width: 100%;
     }
+
 }
 
-@media screen and (max-width: 751px) {
+
+@media screen and (max-width: 769px) {
     .hero-text h1 {
         font-size: 2.375rem;
     }
@@ -309,15 +294,17 @@ hr {
     .search-bar-input input {
         width: 100%;
     }
-}
 
-@media screen and (max-width: 600px) {
     .blog-container {
         grid-template-columns: 1fr;
     }
 
     .blog-container-card {
         width: 100%;
+    }
+
+    .blog-list {
+        padding: 0 8% 16%;
     }
 
 }
@@ -331,6 +318,10 @@ hr {
     .blog-container {
         flex-direction: column;
     }
+
+    .search-bar {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 462px) {
@@ -338,14 +329,17 @@ hr {
         flex-direction: column;
     }
 
-    .box-2-card-img,
-    .box-2-card-text {
+    .box-2-card-img{
         width: 100%;
+    }
+
+    .box-2-card-text {
+        width: 91%;
     }
 
     .search-btn {
         border-radius: 5px 5px 5px 5px;
-        width: 50%;
+        width: 80%;
         margin-top: 10px;
     }
 

@@ -3,7 +3,7 @@
 .featuresBanner {
     width: 100%;
     /* background-color: #EBF2FF; */
-    padding: 75px 0px;
+    padding-top: 30px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -65,8 +65,12 @@
 }
 /* Tablet + Mobiles */
 @media screen and (max-width: 1023px) {
+    .whyeaxee {
+        padding: 3rem 10%;
+    }
+    
     .features {
-        width: 80%;
+        width: 100%;
         flex-direction: column;
         row-gap: 10px;
     }
@@ -92,8 +96,17 @@
 
 /* Mobile View */
 @media screen and (max-width: 768px) {
+    
+    .whyeaxee {
+        padding: 3rem 8%;
+    }
+
     .featuresBanner {
-        padding: 8% 6%;
+        padding: 8% 0;
+    }
+    
+    .featuresBannerHeading  {
+        padding: 0 8%;
     }
 
     .featuresBannerHeading h1 {

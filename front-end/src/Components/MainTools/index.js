@@ -11,7 +11,9 @@ import styles from './maintools.module.css'
 const MainTools = () => {
   return (
     <div className={styles.mainTools}>
-      <h1 className={`${styles.mainToolsHeading} mainHeading`}>All the tools you need</h1>
+      <h1 className={`${styles.mainToolsHeading} mainHeading`}>
+        All the tools you need
+      </h1>
 
       {/* Tool 1 */}
       <div className={styles.toolDetails}>
@@ -29,6 +31,10 @@ const MainTools = () => {
             Create personalized dashboards that display critical insights and
             metrics, empowering teams to make data-driven decisions and drive
             organizational success.
+          </p>
+          <p className="para">
+            Monitor performance to stay ahead of the curve and
+            respond proactively to emerging trends.
           </p>
         </div>
       </div>

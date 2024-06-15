@@ -27,7 +27,7 @@
 
 .footer p, .weblink, .dropdownButton {
     font-size: 18px;
-    color: #cecece;
+    color: #fff;
     font-weight: 500;
 }
 
@@ -81,7 +81,7 @@
 
 .socialLinks a {
     font-size: 32px;
-    color: #cecece;
+    color: #fff;
     transition: transform 0.3s ease;
 }
 

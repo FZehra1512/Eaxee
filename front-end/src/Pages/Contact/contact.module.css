@@ -2,7 +2,7 @@
 
 .contactContainer {
     width: 100%;
-    padding-top: 9rem;
+    padding-top: 8rem;
     padding-bottom: 75px;
     margin: auto;
     text-align: center;
@@ -44,7 +44,7 @@
 .inputField input,
 textarea {
     outline: none;
-    border: 1px solid #cecece;
+    border: 1px solid #393a3a;
     padding: 0.8em 0.6em;
     width: 100%;
     font-size: 1rem;
@@ -55,7 +55,7 @@ textarea {
 .inputField input:-webkit-autofill,
 textarea:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px white inset !important;
-    -webkit-text-fill-color: #2F4682 !important;
+    -webkit-text-fill-color: #393a3a !important;
 }
 
 .inputField input:focus,
