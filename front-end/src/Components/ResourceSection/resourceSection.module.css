@@ -30,6 +30,7 @@
 }
 
 .singleRow {
+    /* border: 1px solid red; */
     width: 100%;
     padding: 0 18%;
     display: flex;
@@ -39,7 +40,7 @@
 }
 
 .resourceCard {
-    width: 40%;
+    width: 40px;
     text-align: center;
     border-radius: 10px; 
     box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.2);
@@ -48,8 +49,9 @@
 }
 
 .resourceCardImg {
+    /* border: 1px solid black; */
     width: 100%;
-    height: 270px;
+    height:80%;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -57,12 +59,12 @@
 }
 
 .resourceCard h1 {
-    padding: 20px 0;
+    padding: 10px 0;
     width: 100%;
     background-color: #fff;
     color: #393a3a;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 27px;
 }
 
 .resourceCard:hover {
@@ -87,7 +89,9 @@
         padding: 0;
     }
     .resourceCard {
-        width: 320px;
+        /* border: 1px solid red; */
+        width: 280px;
+        height: 280px;
     }
 }
 

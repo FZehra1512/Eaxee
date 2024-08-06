@@ -2,6 +2,7 @@
     margin: 10% 0;
     padding: 0 20%;
     width: 100%;
+    text-align: justify;
 }
 
 .blogPost {
@@ -14,6 +15,7 @@
 .blogPost h1 {
     font-size: 3rem;
     font-weight: 700;
+    text-transform:none;
     color: #2158A4;
     text-align: center;
 }

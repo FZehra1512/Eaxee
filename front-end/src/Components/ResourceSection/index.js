@@ -65,6 +65,14 @@ const ResourceSection = () => {
             ></div>
             <h1 className='heading mainHeading'>Demo Videos</h1>
           </Link>
+          <Link  to="/whitepaper" className={styles.resourceCard}>
+            <div
+              className={styles.resourceCardImg}
+              style={{ backgroundImage: `url(${demoVideo})`}}
+            ></div>
+            <h1 className='heading mainHeading'>Whitepapers</h1>
+          </Link>
+        
         </div>
       </div>
     </div>

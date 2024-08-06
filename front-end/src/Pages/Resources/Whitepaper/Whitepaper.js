@@ -80,7 +80,7 @@ const Whitepaper = () => {
             <div className='hero-section'>
                 <div>
                     {/* <hr></hr> */}
-                    <div className='hero-text'><h1>Resource - Whitepaper</h1></div>
+                    <div className='hero-text'><h1>Whitepaper</h1></div>
                     <hr></hr>
                 </div>
             </div>

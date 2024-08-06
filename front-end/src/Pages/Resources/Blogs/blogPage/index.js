@@ -8,13 +8,15 @@ import { IoIosTime, IoMdPerson } from "react-icons/io";
 import { RiTwitterXLine } from "react-icons/ri";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
+import { GrShare } from "react-icons/gr";
+
 
 
 const BlogPage = () => {
   const { id } = useParams();
   const blog = blogs.find((blog) => blog.id === id);
   const blogIndex = blogs.findIndex((blog) => blog.id === id);
-  
+
   const previousBlogId = blogIndex > 0 ? blogs[blogIndex - 1].id : null;
   const nextBlogId =
     blogIndex < blogs.length - 1 ? blogs[blogIndex + 1].id : null;
@@ -23,7 +25,7 @@ const BlogPage = () => {
   const [content, setContent] = useState("");
 
   useEffect(() => {
-    if (blog) { 
+    if (blog) {
       if (blog.contentPath) {
         fetch(process.env.PUBLIC_URL + blog.contentPath)
           .then((res) => res.text())
@@ -66,14 +68,16 @@ const BlogPage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaFacebookSquare />
+            <FaFacebookSquare />  
           </a> */}
           <a
             href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodedBlogUrl}`}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin />
+            {/* <FaLinkedin /> */}
+            <GrShare />
+
           </a>
           {/* <a
             href={`https://twitter.com/intent/tweet?url=${encodedBlogUrl}`}

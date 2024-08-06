@@ -59,10 +59,12 @@ hr {
 }
 
 .div {
+    /* border: 1px solid red; */
     display: flex;
     width: 90vw;
     justify-content: center;
     align-items: center;
+    text-align: justify;
     padding: 6%;
 }
 
