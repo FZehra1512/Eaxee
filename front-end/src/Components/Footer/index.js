@@ -35,7 +35,10 @@ const Footer = () => {
         </Link>
 
         <div className={styles.resourcesLinks}>
-          <button onClick={toggleDropdown} className={`${styles.dropdownButton} para`}>
+          <button
+            onClick={toggleDropdown}
+            className={`${styles.dropdownButton} para`}
+          >
             Resources{" "}
             <IoMdArrowDropdown className={styles.dropdownButtonIcon} />
           </button>
@@ -62,7 +65,7 @@ const Footer = () => {
       </div>
 
       <div className={styles.footer}>
-        <p className='para'>©{currentYear} Eaxee | All rights reserved</p>
+        <p className="para">©{currentYear} Eaxee | All rights reserved</p>
         <div className={styles.socialLinks}>
           <a
             onClick={openMail}
@@ -72,7 +75,11 @@ const Footer = () => {
           >
             <MdEmail />
           </a>
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/company/eaxeesoft/about/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <RiLinkedinBoxFill />
           </a>
           <a

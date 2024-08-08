@@ -40,7 +40,7 @@
 }
 
 .resourceCard {
-    width: 40%;
+    /* width: 250px; */
     text-align: center;
     box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
@@ -48,9 +48,10 @@
 }
 
 .resourceCardImg {
-    width: 100%;
+    width: 250px;
     height: 250px;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     display: flex;
     align-items: end;
@@ -71,38 +72,35 @@
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1380px) {
+@media screen and (min-width: 769px) and (max-width: 1380px) {
     .resources {
         flex-direction: column;
         row-gap: 75px;
-        padding: 0 10%;
+        padding: 0 8%;
     }
     .rows {
-        justify-content: space-evenly;
+        justify-content: space-between;
         gap: 0;
     }
     .singleRow {
-        justify-content: space-evenly;
-        padding: 0;
+        justify-content: space-between;
+        padding: 0 6%;
+        gap: 0;
     }
     .resourceCardImg  {
+        width: 220px;
         height: 220px;
     }
-    .resourceCard {
-        /* border: 1px solid red; */
-        width: 280px;
-        height: 280px;
-    }
+    
 }
 
 /* Tablet View */
-@media screen and (min-width: 769px) and (max-width: 1023px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     .resourcesSection {
-        padding: 8%;
+        padding: 8% 0;
     }
     
     .resources {
-        padding: 0;
         margin: 60px 0 20px;
     }
 
@@ -110,7 +108,13 @@
         gap: 8%;
     }
     .singleRow {
-        gap: 4%;
+        padding: 0;
+        gap: 0;
+    }
+
+    .resourceCardImg  {
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -145,14 +149,15 @@
         padding: 0;
     }
     .resourceCard {
-        width: 70%;
+        /* width: 70%; */
         box-shadow: 5px 5px 6px 2px rgba(0, 0, 0, 0.28);
         -webkit-box-shadow: 5px 5px 6px 2px rgba(0, 0, 0, 0.28);
         -moz-box-shadow: 5px 5px 6px 2px rgba(0, 0, 0, 0.28);
     }
 
     .resourceCardImg {
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
     
     .resourceCard h1 {
@@ -162,12 +167,9 @@
 }
 
 @media screen and (min-width: 540px) and (max-width: 768px) {
-    .resourceCard {
-        width: 60%;
-        height: 320px;
-    }
     .resourceCardImg {
-        height: 250px;
+        width: 300px;
+        height: 300px;
     }
     .resourceCard h1 {
         font-size: 24px;
