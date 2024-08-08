@@ -42,7 +42,7 @@ const Blog = () => {
       <div className="hero-section">
         <div>
           <div className="hero-text">
-            <h1 className='mainHeading'>Blog</h1>
+            <h1 className='mainHeading'>Blogs</h1>
           </div>
           <hr />
         </div>
