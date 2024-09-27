@@ -51,10 +51,10 @@ const Footer = () => {
             <Link to="/videos" className={`${styles.weblink} para`}>
               - Demo Videos
             </Link>
-            {/* <Link to="/whitepaper" className={styles.weblink}>
+            <Link to="/whitepaper" className={styles.weblink}>
               - Whitepaper
             </Link>
-            <Link to="/documentation" className={styles.weblink}>
+            {/* <Link to="/documentation" className={styles.weblink}>
               - Documentation
             </Link>
             <Link to="/events" className={styles.weblink}>
