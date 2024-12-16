@@ -7,12 +7,12 @@ import blog4Img from "../../../Assets/blogImages/blog4Img1.jpg";
 const blogs = [
   {
     id: "enterprise-architecture",
-    title: "Enterprise Architecture",
+    title: "Enterprise Architecture: The Blueprint for Organizational Growth and Innovation.",
     image: blog1Img,
     author: "S.M.Monir",
     date: "January 5, 2023",
     description:
-      "Characterized by rapid development, growth and innovation, the digital era is confronting enterprises with an increasing variety of options to deal with at an ever faster changing environment.",
+      "Discover how Enterprise Architecture empowers organizations to adapt, innovate, and drive growth by providing strategic insights, resource optimization, and governance.",
     contentPath: "/data/blog1.md",
   },
   {
